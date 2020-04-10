@@ -1,0 +1,39 @@
+- name: Git
+  weight: 5
+  type: tool
+
+- name: Bash
+  weight: 3
+  type: tool
+
+- name: Scrum
+  weight: 3
+  type: tool
+
+- name: Travis CI
+  weight: 1
+  type: tool
+
+- name: Jenkins
+  weight: 1
+  type: tool
+
+- name: Chrome DevTools
+  weight: 2
+  type: tool
+
+- name: npm
+  weight: 2
+  type: tool
+
+- name: gulp
+  weight: 4
+  type: tool
+
+- name: VS Code
+  weight: 3
+  type: tool
+
+- name: Postman
+  weight: 4
+  type: tool

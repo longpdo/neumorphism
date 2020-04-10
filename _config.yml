@@ -1,0 +1,64 @@
+# Site settings
+title: Neumorphism
+description: Personal website powered by Jekyll
+baseurl: "/neumorphism" # the subpath of your site, e.g. /blog
+# url: "localhost:3000" # the base hostname & protocol for your site e.g. https://example.com/
+
+# Landing Page
+username: Neumorphism
+typing_text: Jekyll Theme
+email: email@example.com
+github_username: longpdo
+codepen_username: exampleUser
+dev_username: exampleUser
+linkedin_username: exampleUser
+twitter_username: exampleUser
+
+# About Me Section
+show_aboutme_card: true
+about_me_title: About Me
+about_me_description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+# Skills Section
+show_skills_card: true
+skills_title: Skills
+
+# Timeline Section
+show_timeline_card: true
+timeline_title: Education & Experience
+cv_download_link: https://example.com/
+
+# Projects Section
+show_projects_card: true
+show_projects: true
+projects_title: Projects
+show_os_projects: true
+os_projects_title: Open Source Projects
+
+# Github-Metadata
+repository: longpdo/cv
+projects:
+  # pushed or stars
+  sort_by: pushed
+  exclude:
+    archived: true
+    forks: true
+    projects:
+    # - repo-name
+
+# Google-analytics
+google-analytics:
+  id: ""
+
+plugins:
+  - "jekyll-github-metadata"
+
+exclude:
+  [
+    "_assets",
+    "Gemfile",
+    "Gemfile.lock",
+    "gulpfile.js",
+    "node_modules",
+    "package.json",
+  ]

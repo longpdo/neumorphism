@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="{{ "/assets/js/app.js" | prepend: site.baseurl }}" defer></script>
+</head>
+
+<body>
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+  {% include landing-page.html %}
+  <div class="layout">
+    {%if site.show_aboutme_card %}
+      <section class="card neumorphism-card-big">
+        {% include section-aboutme.html %}
+      </section>
+    {% endif %}
+    {%if site.show_skills_card %}
+      <section class="card neumorphism-card-big">
+        {% include section-skills.html %}
+      </section>
+    {% endif %}
+    {%if site.show_timeline_card %}
+      <section class="card neumorphism-card-big">
+        {% include section-timeline.html %}
+      </section>
+    {% endif %}
+    {%if site.show_projects_card %}
+      <section class="card neumorphism-card-big">
+        {% include section-projects.html %}
+      </section>
+    {% endif %}
+  </div>
+  {% include footer.html %}
+</body>
+</html>

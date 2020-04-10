@@ -1,0 +1,74 @@
+{% if site.show_projects %}
+  <h1 class="title"><span>{{site.projects_title}}</span></h1>
+  <div class="projects-wrapper">
+    {% for project in site.data.projects %}
+      <div class="project neumorphism-card" data-aos="zoom-in-down">
+        <h3>{{project.name}}</h3>
+        <div class="links">
+          {% if project.demo %}
+            <a href="{{project.github}}" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          {% endif %}
+        </div>
+        <p>{{project.descr}}</p>
+        {% if project.tags %}
+          <div class="tag-wrapper">
+            {% for tag in project.tags %}
+              <span class="tag neumorphism-card">{{tag.tag}}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% if site.show_os_projects %}
+  <h1 class="title">{{site.os_projects_title}}</h1>
+  {% if site.projects.sort_by == 'stars' %}
+    {% assign sort_order = 'stargazers_count', 'last' %}
+  {% else %}
+    {% assign sort_order = 'pushed_at' %}
+  {% endif %}
+
+  {% if site.projects.exclude.archived && site.projects.exclude.forks %}
+    {% assign filtered_repos = site.github.public_repositories | where:'archived', false | where:'fork', false | sort: sort_order | reverse %}
+  {% elsif site.projects.exclude.archived %}
+    {% assign filtered_repos = site.github.public_repositories | where:'archived', false | sort: sort_order | reverse %}
+  {% elsif site.projects.exclude.forks %}
+    {% assign filtered_repos = site.github.public_repositories | where:'fork', false | sort: sort_order | reverse %}
+  {% else %}
+    {% assign filtered_repos = site.github.public_repositories | sort: sort_order | reverse %}
+  {% endif %}
+
+  <div class="projects-wrapper">
+    {% for repository in filtered_repos %}
+      {% unless site.projects.exclude.projects contains repository.name %}
+        <div class="project neumorphism-card" data-aos="zoom-in-down">
+          <h3>{{ repository.name }}</h3>
+          <div class="links">
+            <a href="{{repository.html_url}}" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            {% if repository.homepage != "" and repository.homepage != nil %}
+              <a href="{{repository.homepage}}" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            {% endif %}
+          </div>
+          <p>{{repository.description}}</p>
+          {% if repository.topics %}
+            <div class="tag-wrapper">
+              {% for topic in repository.topics %}
+                <span class="tag neumorphism-card">{{topic}}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      {% endunless %}
+    {% endfor %}
+  </div>
+{% endif %}
+
+

@@ -1,0 +1,42 @@
+- title: airbnb
+  title-url: https://example.com/
+  date: Sep 2019 - Present
+  subtitle: Fullstack Developer
+  tags:
+    - tag: React
+    - tag: Javascript
+    - tag: Ruby
+    - tag: Rails
+  timeline-side: right
+
+- title: Google
+  title-url: https://example.com/
+  date: Mar 2019 - Sep 2019
+  subtitle: Software Engineer as Intern
+  tags:
+    - tag: Flutter
+    - tag: Dart
+    - tag: Keycloak
+  timeline-side: right
+
+- title: Super University
+  title-url: https://example.com/
+  date: 2017 - 2019
+  subtitle: M.Sc. Computer Science
+  timeline-side: left
+
+- title: Facebook
+  title-url: https://example.com/
+  date: Sep 2017 - Mar 2019
+  subtitle: Front-End Developer as Intern
+  tags:
+    - tag: React
+    - tag: Node
+    - tag: Javascript
+  timeline-side: right
+
+- title: Super University
+  title-url: https://example.com/
+  date: 2014 - 2017
+  subtitle: B.A. Computer Science
+  timeline-side: left
