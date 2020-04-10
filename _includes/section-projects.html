@@ -6,7 +6,7 @@
         <h3>{{project.name}}</h3>
         <div class="links">
           {% if project.demo %}
-            <a href="{{project.github}}" target="_blank">
+            <a href="{{project.github}}" target="_blank" rel="noreferrer">
               <i class="fas fa-external-link-alt"></i>
             </a>
           {% endif %}
@@ -48,11 +48,11 @@
         <div class="project neumorphism-card" data-aos="zoom-in-down">
           <h3>{{ repository.name }}</h3>
           <div class="links">
-            <a href="{{repository.html_url}}" target="_blank">
+            <a href="{{repository.html_url}}" target="_blank" rel="noreferrer">
               <i class="fab fa-github"></i>
             </a>
             {% if repository.homepage != "" and repository.homepage != nil %}
-              <a href="{{repository.homepage}}" target="_blank">
+              <a href="{{repository.homepage}}" target="_blank" rel="noreferrer">
                 <i class="fas fa-external-link-alt"></i>
               </a>
             {% endif %}
