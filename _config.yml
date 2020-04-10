@@ -36,7 +36,7 @@ show_os_projects: true
 os_projects_title: Open Source Projects
 
 # Github-Metadata
-repository: longpdo/cv
+repository: longpdo/neumorphism
 projects:
   # pushed or stars
   sort_by: pushed
