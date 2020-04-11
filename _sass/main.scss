@@ -153,51 +153,56 @@ a {
   right: 0;
   z-index: 999;
 
-  #loader {
-    animation: spin 4s linear infinite;
-    border: 0.25rem solid transparent;
-    border-radius: 50%;
-    border-top-color: $primary-color;
-    height: 15rem;
-    overflow: hidden;
-    position: relative;
-    left: 1rem;
-    top: -6rem;
-    width: 15rem;
+  .load {
+    height: 6rem;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 6rem;
   }
 
-  #loader:before {
-    animation: spin 6s linear infinite;
-    border: 0.25rem solid transparent;
-    border-radius: 50%;
-    border-top-color: $primary-color;
-    bottom: 0.5rem;
-    content: "";
-    left: 0.5rem;
+  .load hr {
+    animation: spin 2s ease infinite;
+    border: 0;
+    height: 40%;
+    margin: 0;
     position: absolute;
-    right: 0.5rem;
-    top: 0.5rem;
+    width: 40%;
   }
 
-  #loader:after {
-    animation: spin 3s linear infinite;
-    border: 0.25rem solid transparent;
-    border-radius: 50%;
-    border-top-color: $primary-color;
-    bottom: 1.25rem;
-    content: "";
-    left: 1.25rem;
-    position: absolute;
-    right: 1.25rem;
-    top: 1.25rem;
+  .load :first-child {
+    animation-delay: -1.5s;
+    background: $text-color;
+  }
+
+  .load :nth-child(2) {
+    animation-delay: -1s;
+    background: $primary-color;
+  }
+
+  .load :nth-child(3) {
+    animation-delay: -0.5s;
+    background: $text-color;
+  }
+
+  .load :last-child {
+    background: $primary-color;
   }
 
   @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
+    0%,
     100% {
-      transform: rotate(360deg);
+      transform: translate(0);
+    }
+    25% {
+      transform: translate(160%);
+    }
+    50% {
+      transform: translate(160%, 160%);
+    }
+    75% {
+      transform: translate(0, 160%);
     }
   }
 }

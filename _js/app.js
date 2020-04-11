@@ -49,7 +49,11 @@ function fadeOutPreloader(element, duration) {
       element.style.opacity = 0;
       element.style.filter = "alpha(opacity = 0)";
 
+      // Allow horizontal scroll
       document.documentElement.style.overflowY = "auto";
+
+      // Remove preloader div
+      document.getElementById("preloader").remove();
 
       clearInterval(interval);
     } else {
