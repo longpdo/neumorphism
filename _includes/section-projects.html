@@ -3,13 +3,15 @@
   <div class="projects-wrapper">
     {% for project in site.data.projects %}
       <div class="project neumorphism-card" data-aos="zoom-in-down">
-        <h3>{{project.name}}</h3>
-        <div class="links">
-          {% if project.demo %}
+        <div class="name-link-wrapper">
+          <h3>{{project.name}}</h3>
+          <div class="links">
+            {% if project.demo %}
             <a href="{{project.github}}" target="_blank" rel="noreferrer">
               <i class="fas fa-external-link-alt"></i>
             </a>
-          {% endif %}
+            {% endif %}
+          </div>
         </div>
         <p>{{project.descr}}</p>
         {% if project.tags %}
@@ -46,16 +48,18 @@
     {% for repository in filtered_repos %}
       {% unless site.projects.exclude.projects contains repository.name %}
         <div class="project neumorphism-card" data-aos="zoom-in-down">
-          <h3>{{ repository.name }}</h3>
-          <div class="links">
-            <a href="{{repository.html_url}}" target="_blank" rel="noreferrer">
-              <i class="fab fa-github"></i>
-            </a>
-            {% if repository.homepage != "" and repository.homepage != nil %}
+          <div class="name-link-wrapper">
+            <h3>{{ repository.name }}</h3>
+            <div class="links">
+              <a href="{{repository.html_url}}" target="_blank" rel="noreferrer">
+                <i class="fab fa-github"></i>
+              </a>
+              {% if repository.homepage != "" and repository.homepage != nil %}
               <a href="{{repository.homepage}}" target="_blank" rel="noreferrer">
                 <i class="fas fa-external-link-alt"></i>
               </a>
-            {% endif %}
+              {% endif %}
+            </div>
           </div>
           <p>{{repository.description}}</p>
           {% if repository.topics %}

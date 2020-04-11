@@ -17,7 +17,7 @@ $bg-color: rgba(43, 45, 47, 1);
 $card-bg-color: linear-gradient(
   145deg,
   rgba(115, 115, 115, 0.15) 15%,
-  rgba(43, 43, 43, 0.45) 80%
+  rgba(43, 45, 47, 1) 80%
 );
 $primary-color: #ff073a;
 
@@ -81,9 +81,9 @@ a {
 /* Layout */
 
 .layout {
-  margin: 0 auto;
+  margin: 0.5rem;
   max-width: $large-screen;
-  padding: 1rem 1rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .layout .card {
@@ -147,6 +147,8 @@ a {
   height: 100%;
   justify-content: center;
   left: 0;
+  margin: 0.5rem;
+  padding: 0.5rem;
   position: absolute;
   right: 0;
   z-index: 999;
@@ -157,9 +159,10 @@ a {
     border-radius: 50%;
     border-top-color: $primary-color;
     height: 15rem;
+    overflow: hidden;
     position: relative;
     left: 1rem;
-    top: -7rem;
+    top: -6rem;
     width: 15rem;
   }
 
@@ -204,6 +207,7 @@ a {
 .footer {
   background: $bg-color;
   color: $text-color;
+  margin: 0.5rem;
   padding: 1rem;
   text-align: center;
 }
@@ -225,11 +229,15 @@ a {
   color: $text-color;
   display: flex;
   height: 100%;
+  margin: 0.5rem;
+  padding: 0.5rem;
   text-align: center;
 }
 
 .landing-title {
   left: 0;
+  margin: 0.5rem;
+  padding: 0.5rem;
   position: absolute;
   right: 0;
   top: 40%;
@@ -446,6 +454,7 @@ a {
     margin-left: -0.0675rem;
     position: absolute;
     width: 0.125rem;
+    z-index: -1;
   }
 
   .timeline li {
@@ -552,13 +561,14 @@ a {
   padding: 0.5rem 1rem;
 }
 
-.project .links {
+.project .name-link-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project .name-link-wrapper .links {
   font-size: 1.5rem;
   margin: 1rem 0.5rem;
-  padding: 0.5rem;
-  position: absolute;
-  right: 0;
-  top: 0;
 
   a:hover {
     animation: jump 1s infinite alternate;
@@ -593,6 +603,7 @@ a {
 
 @media only screen and (min-width: $small-screen) {
   .layout {
+    margin: 0.5rem auto;
     padding: 2rem 2rem;
   }
 
