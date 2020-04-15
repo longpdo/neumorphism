@@ -89,7 +89,7 @@ a {
 .layout .card {
   background: $card-bg-color;
   border-radius: 2rem;
-  margin: 1rem 0;
+  margin: 3rem 0;
   padding: 1rem 2rem;
 }
 
@@ -134,8 +134,7 @@ a {
 }
 
 .neumorphism-card-big {
-  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 1),
-    inset -3px -3px 6px rgba(99, 99, 99, 1);
+  box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
 }
 
 /* Preloader */
@@ -389,50 +388,49 @@ a {
     transition: opacity 0.5s;
   }
 
+  div[skill-type="language"] {
+    color: #e84a5f;
+  }
+
+  div[skill-type="framework"] {
+    color: #ff847c;
+  }
+
+  div[skill-type="tool"] {
+    color: #fecea8;
+  }
+
+  div[skill-weight="1"] {
+    font-size: 0.75rem;
+    line-height: 0.25rem;
+  }
+
+  div[skill-weight="2"] {
+    font-size: 1.25rem;
+    line-height: 0.75rem;
+  }
+
+  div[skill-weight="3"] {
+    font-size: 1.75rem;
+    line-height: 1.25rem;
+  }
+
+  div[skill-weight="4"] {
+    font-size: 2.25rem;
+    line-height: 1.75rem;
+  }
+
+  div[skill-weight="5"] {
+    font-size: 2.75rem;
+    line-height: 2.25rem;
+  }
+
   input[type="radio"] {
     display: none;
   }
 
   .filter-button {
-    border-radius: 0.5rem;
-    cursor: pointer;
-    margin: 0 0.25rem 0.5rem;
-    padding: 0.25rem;
-    text-align: center;
-    width: 44%;
-
-    &:hover {
-      letter-spacing: 0.25rem;
-    }
-  }
-
-  @mixin filter-out {
-    height: 0;
-    margin: 0;
-    opacity: 0;
-    padding: 0;
-    width: 0;
-  }
-
-  input[type="radio"]:checked + .filter-button {
-    color: $primary-color;
-    font-weight: $font-weight-strong;
-    @include neumorphism-button-pressed();
-  }
-
-  input[id="language"]:checked ~ div[skill-type="framework"],
-  input[id="language"]:checked ~ div[skill-type="tool"] {
-    @include filter-out;
-  }
-
-  input[id="framework"]:checked ~ div[skill-type="language"],
-  input[id="framework"]:checked ~ div[skill-type="tool"] {
-    @include filter-out;
-  }
-
-  input[id="tool"]:checked ~ div[skill-type="language"],
-  input[id="tool"]:checked ~ div[skill-type="framework"] {
-    @include filter-out;
+    display: none;
   }
 }
 
@@ -546,7 +544,7 @@ a {
     background: $bg-color;
     border-radius: 0.5rem;
     display: inline-block;
-    padding: 0.5rem;
+    padding: .6rem;
   }
 
   .desc {
@@ -601,7 +599,7 @@ a {
   border-radius: 0.5rem;
   display: inline-block;
   margin-bottom: 0.25rem;
-  padding: 0.25rem 0.5rem;
+  padding: 0.5rem;
 }
 
 /* Media Queries */
@@ -626,9 +624,74 @@ a {
     }
   }
 
-  #skills .filter-button {
-    margin: 0 0.5rem 1rem;
-    width: 21%;
+  #skills {
+    div[skill-weight="1"] {
+      font-size: 1rem;
+      line-height: 0rem;
+    }
+
+    div[skill-weight="2"] {
+      font-size: 2rem;
+      line-height: 1rem;
+    }
+
+    div[skill-weight="3"] {
+      font-size: 3rem;
+      line-height: 2rem;
+    }
+
+    div[skill-weight="4"] {
+      font-size: 4rem;
+      line-height: 3rem;
+    }
+
+    div[skill-weight="5"] {
+      font-size: 5rem;
+      line-height: 4rem;
+    }
+
+    .filter-button {
+      border-radius: 0.5rem;
+      cursor: pointer;
+      display: unset;
+      margin: 0 0.5rem 1rem;
+      padding: 0.5rem 0.25rem;
+      text-align: center;
+      width: 21%;
+
+      &:hover {
+        letter-spacing: 0.25rem;
+      }
+    }
+
+    @mixin filter-out {
+      height: 0;
+      margin: 0;
+      opacity: 0;
+      padding: 0;
+      width: 0;
+    }
+
+    input[type="radio"]:checked + .filter-button {
+      color: $primary-color;
+      font-weight: $font-weight-strong;
+      @include neumorphism-button-pressed();
+    }
+
+    input[id="language"]:checked ~ div[skill-type="framework"],
+    input[id="language"]:checked ~ div[skill-type="tool"] {
+      @include filter-out;
+    }
+
+    input[id="framework"]:checked ~ div[skill-type="language"],
+    input[id="framework"]:checked ~ div[skill-type="tool"] {
+      @include filter-out;
+    }
+
+    input[id="tool"]:checked ~ div[skill-type="language"],
+    input[id="tool"]:checked ~ div[skill-type="framework"] {
+      @include filter-out;
+    }
   }
 
   .timeline-wrapper {
