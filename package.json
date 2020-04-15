@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "gulp"
+    "dev": "gulp",
+    "prod": "gulp build"
   },
   "author": "Long Do",
   "license": "MIT",
