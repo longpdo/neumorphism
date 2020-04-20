@@ -101,32 +101,19 @@ yarn
 
 ## Usage
 
-* Run and develop locally
+* Run and develop locally with live server at `http://localhost:4000`
 
 ```sh
 gulp
 ```
 
-* Build production
+* Build production to minify JS and SASS assets before pushing to upstream
 
 ```sh
 gulp build
 ```
 
-* Usual Development workflow
-
-```sh
-# Develop with live server at http://localhost:4000
-gulp
-
-# Build production to minify JS and SASS assets
-gulp build
-
-# After committing your changes, push to upstream
-git push
-
-# See the Settings page of your repository to see where your site is published at
-```
+* After committing and pushing, see the `Settings` page of your repository to see where your site is published at.
 
 ### Personalize and Customize
 
