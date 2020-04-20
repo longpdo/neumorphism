@@ -28,7 +28,7 @@
 
 [![Project Screenshot][product-screenshot]](https://longpdo.github.io/neumorphism/)
 
-This is a personal website built with Jekyll, which is based on the new Neumorphism design trend. This can be used by developers, who want to showcase their resume and portfolio If you want to use this for your own website, fork this repository and then refer to [personalize and customize](#personalize-and-customize).
+This is a personal website built with `Jekyll` and hosted on `Github Pages`, which is based on the new `Neumorphism` design trend. This can be used by developers, who want to showcase their resume and portfolio. If you want to use this for your own website, fork this repository and then refer to [personalize and customize](#personalize-and-customize).
 
 ### Built With
 
@@ -36,13 +36,13 @@ This is a personal website built with Jekyll, which is based on the new Neumorph
 
 ### Features
 
-* Gulp dev workflow with [BrowserSync](https://browsersync.io/), [Autoprefixer](https://autoprefixer.github.io/) and SASS & JS minifying.
+* Gulp dev workflow with [BrowserSync](https://browsersync.io/), [Autoprefixer](https://autoprefixer.github.io/) and `JS` & `SCSS` minifying.
 * Animated preloader animation
 * Animated landing page background with [particles.js](https://vincentgarreau.com/particles.js/)
 * Typing Carousel on the landing page
 * [Animations On Scroll](https://michalsnik.github.io/aos/)
-* Filterable skills word cloud
-* [Github's API](https://developer.github.com/v3/) automatically populating the Open Source Projects section
+* Filterable *Skills* word cloud
+* [Github's API](https://developer.github.com/v3/) automatically populating the *Open Source Projects* section
 * [Font Awesome](https://fontawesome.com/)
 * [Normalize.css](https://necolas.github.io/normalize.css/)
 * [Google Analytics](https://analytics.google.com/)
@@ -61,7 +61,7 @@ To get a local copy up and running follow these simple steps.
 brew install node
 ```
 
-If you need to switch between Node versions regurlarly, I would recommended to install Node via [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm/blob/master/README.md#manual-install).
+If you need to switch between Node versions regurlarly, I would recommend to install Node via [Node Version Manager](https://github.com/nvm-sh/nvm/blob/master/README.md#manual-install).
 
 * [Jekyll](https://jekyllrb.com/)
 
@@ -107,13 +107,13 @@ yarn
 gulp
 ```
 
-* Build production to minify JS and SASS assets before pushing to upstream
+* Build production to minify `JS` and `SCSS` assets before pushing to upstream
 
 ```sh
 gulp build
 ```
 
-* After committing and pushing, see the `Settings` page of your repository to see where your site is published at.
+* After committing and pushing, see the `Settings` page of your repository to see where your site is published at via `Github Pages`.
 
 ### Personalize and Customize
 
