@@ -28,7 +28,7 @@
 
 [![Project Screenshot][product-screenshot]](https://longpdo.github.io/neumorphism/)
 
-This is a personal website built with Jekyll, which is based on the new Neumorphism design trend. This can be used by developers, who want to showcase their resume and portfolio If you want to use this for your own website, fork this repository and refer to [personalize and customize](#personalize-and-customize).
+This is a personal website built with Jekyll, which is based on the new Neumorphism design trend. This can be used by developers, who want to showcase their resume and portfolio If you want to use this for your own website, fork this repository and then refer to [personalize and customize](#personalize-and-customize).
 
 ### Built With
 
@@ -137,7 +137,7 @@ git push
 You need to generate a new personal access token on GitHub:
 
 * Go to the [Github Token site](https://github.com/settings/tokens/new)
-* Select the scope public_repository, and add a description.
+* Select the scope `public_repository`, and add a description.
 * Confirm and save the settings. Copy the token you see on the page.
 * Create a `.env` file inside your repository and add your generated `JEKYLL_GITHUB_TOKEN`:
 
