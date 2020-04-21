@@ -18,6 +18,10 @@
   * [Installation](#installation)
 * [Usage](#usage)
   * [Personalize and Customize](#personalize-and-customize)
+    * [_config.yml](#configyml)
+    * [Github Metadata Plugin](#github-metadata-plugin)
+    * [_data/*.yml](#datayml)
+    * [Particles.js](#particlesjs)
 * [Contributing](#contributing)
 * [License](#license)
 * [Acknowledgements](#acknowledgements)
@@ -117,9 +121,13 @@ gulp build
 
 ### Personalize and Customize
 
-1: Edit `_config.yml` to personalize your site. For documentation, refer to [docs/config.md](https://github.com/longpdo/neumorphism/blob/master/docs/config.md).
+#### _config.yml
 
-1.1: If you want to automatically have your Github repositories pulled for the *Open Source Projects* section, then you also need to authenticate yourself for the Github Metadata plugin to work.
+Edit `_config.yml` to personalize your site. For documentation, refer to [docs/config.md](https://github.com/longpdo/neumorphism/blob/master/docs/config.md).
+
+#### Github Metadata Plugin
+
+If you want to automatically have your Github repositories pulled for the *Open Source Projects* section, then you also need to authenticate yourself for the Github Metadata plugin to work.
 
 You need to generate a new personal access token on GitHub:
 
@@ -132,9 +140,24 @@ You need to generate a new personal access token on GitHub:
 JEKYLL_GITHUB_TOKEN=0YOUR0GENERATED0TOKEN0
 ```
 
-2: Edit files inside `_data` to add information to the portfolio. For documentation, refer to [docs/data.md](https://github.com/longpdo/neumorphism/blob/master/docs/data.md).
+To complete the configuration for the Github Metadata plugin, you also need to change the value of `repository` inside `_config.yml`. After this, you should the Github Metadata plugin should work properly.
 
-3: Edit `assets/particles.json` to customize the landing page backgorund animation. For more information, refer to [this](https://github.com/VincentGarreau/particles.js/#options).
+For optimal results, you should make sure, that every Github project, you want included on this portfolio, has added following informations on Github:
+
+* Description
+* Homepage link, if there is a live version of it
+* Topics
+
+Example:
+![Github Repository Information Example][github-repo-info]
+
+#### _data/*.yml
+
+Edit files inside `_data` to add information to the portfolio. For documentation, refer to [docs/data.md](https://github.com/longpdo/neumorphism/blob/master/docs/data.md).
+
+#### Particles.js
+
+Edit `assets/particles.json` to customize the landing page backgorund animation. For more information, refer to [this](https://github.com/VincentGarreau/particles.js/#options).
 
 <!-- CONTRIBUTING -->
 
@@ -167,3 +190,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [product-screenshot]: docs/screenshot.gif
+[github-repo-info]: docs/github-repo-info.png
