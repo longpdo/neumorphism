@@ -99,7 +99,6 @@ a {
 }
 
 .layout .card .subtitle {
-  font-size: 1.25rem;
   text-align: center;
 }
 
@@ -644,6 +643,14 @@ a {
   .layout {
     margin: 0.5rem auto;
     padding: 2rem 2rem;
+  }
+
+  .layout .card .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .layout .card .description {
+    font-size: 1.25rem;
   }
 
   .landing-title h1 {
