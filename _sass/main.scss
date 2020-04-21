@@ -252,11 +252,11 @@ a {
   justify-content: center;
 
   .social-link {
+    color: $text-color;
     position: relative;
     height: 3rem;
     line-height: 3rem;
     margin: 0.25rem;
-    color: $text-color;
     width: 3rem;
 
     .circle {
@@ -577,18 +577,6 @@ a {
     animation: jump 1s infinite alternate;
     position: relative;
   }
-
-  @keyframes jump {
-    0% {
-      bottom: 0;
-    }
-    50% {
-      bottom: 0.5rem;
-    }
-    100% {
-      bottom: 0;
-    }
-  }
 }
 
 .tag-wrapper {
@@ -600,6 +588,54 @@ a {
   display: inline-block;
   margin-bottom: 0.25rem;
   padding: 0.5rem;
+}
+
+/* Contact Card */
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+
+  .social-link {
+    color: $primary-color;
+    position: relative;
+    height: 3rem;
+    line-height: 3rem;
+    margin: 0.25rem;
+    text-align: center;
+    width: 3rem;
+
+    .social {
+      font-size: 1.5rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+      animation: jump 1s infinite alternate;
+
+      .social {
+        color: $text-color;
+      }
+    }
+  }
+
+  .black:hover {
+    .social {
+      color: #000;
+    }
+  }
+
+  .linkedin:hover {
+    .social {
+      color: #007bb6;
+    }
+  }
+
+  .twitter:hover {
+    .social {
+      color: #1da1f2;
+    }
+  }
 }
 
 /* Media Queries */
@@ -697,7 +733,7 @@ a {
   .timeline-wrapper {
     .timeline {
       margin: 0 auto;
-      width: 41.25rem;
+      width: 39.25rem;
     }
 
     .timeline li:after {
@@ -709,11 +745,11 @@ a {
     .direction-l {
       float: left;
       text-align: right;
-      width: 19.375rem;
+      width: 18.5rem;
 
       .hexagon {
         left: auto;
-        right: -1.75rem;
+        right: -1.6rem;
         top: 0.4rem;
       }
 
@@ -735,10 +771,10 @@ a {
     .direction-r {
       float: right;
       text-align: left;
-      width: 19.375rem;
+      width: 18.5rem;
 
       .hexagon {
-        left: -1.75rem;
+        left: -1.6rem;
         right: auto;
         top: 0.4rem;
       }
@@ -767,6 +803,16 @@ a {
       width: 44%;
     }
   }
+
+  .contact-icons .social-link {
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+
+    .social {
+      font-size: 2rem;
+    }
+  }
 }
 
 @media only screen and (min-width: $medium-screen) {
@@ -784,15 +830,15 @@ a {
 
   .timeline-wrapper {
     .timeline {
-      width: 51.875rem;
+      width: 49rem;
     }
 
     .direction-l {
-      width: 24.6875rem;
+      width: 23.35rem;
     }
 
     .direction-r {
-      width: 24.6875rem;
+      width: 23.35rem;
     }
   }
 
@@ -814,15 +860,15 @@ a {
 
   .timeline-wrapper {
     .timeline {
-      width: 60.625rem;
+      width: 58rem;
     }
 
     .direction-l {
-      width: 29.0625rem;
+      width: 27.9rem;
     }
 
     .direction-r {
-      width: 29.0625rem;
+      width: 27.9rem;
     }
   }
 
@@ -830,5 +876,19 @@ a {
     > * {
       width: 46%;
     }
+  }
+}
+
+/* Reusable Animations */
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 0.5rem;
+  }
+  100% {
+    bottom: 0;
   }
 }
