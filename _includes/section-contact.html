@@ -1,0 +1,57 @@
+<h1 class="title">{{site.contact_title}}</h1>
+<p class="description" data-aos="fade-down">{{site.contact_description}}</p>
+
+<div class="contact-icons">
+  {% if site.email != null %}
+  <a class="social-link" aria-label="My E-Mail" href="mailto:{{site.email}}">
+    <div class="social">
+      <i class="fa fa-envelope"></i>
+    </div>
+  </a>
+  {% endif %}
+
+  {% if site.github_username != null %}
+  <a class="social-link" aria-label="My GitHub" target="_blank" rel="noreferrer"
+    href="https://github.com/{{site.github_username}}">
+    <div class="social">
+      <i class="fab fa-github" aria-hidden="true"></i>
+    </div>
+  </a>
+  {% endif %}
+
+  {% if site.codepen_username != null %}
+  <a class="social-link black" aria-label="My Codepen" target="_blank" rel="noreferrer"
+    href="https://codepen.io/{{site.codepen_username}}">
+    <div class="social">
+      <i class="fab fa-codepen" aria-hidden="true"></i>
+    </div>
+  </a>
+  {% endif %}
+
+  {% if site.dev_username != null %}
+  <a class="social-link black" aria-label="My DEV" target="_blank" rel="noreferrer"
+    href="https://dev.to/{{site.dev_username}}">
+    <div class="social">
+      <i class="fab fa-dev" aria-hidden="true"></i>
+    </div>
+  </a>
+  {% endif %}
+
+  {% if site.linkedin_username != null %}
+  <a class="social-link linkedin" aria-label="My LinkedIn" target="_blank" rel="noreferrer"
+    href="https://www.linkedin.com/in/{{site.linkedin_username}}">
+    <div class="social">
+      <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+    </div>
+  </a>
+  {% endif %}
+
+  {% if site.twitter_username != null %}
+  <a class="social-link twitter" aria-label="My Twitter" target="_blank" rel="noreferrer"
+    href="https://twitter.com/{{site.twitter_username}}">
+    <div class="social">
+      <i class="fab fa-twitter" aria-hidden="true"></i>
+    </div>
+  </a>
+  {% endif %}
+</div>

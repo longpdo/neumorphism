@@ -62,6 +62,14 @@
   * setting this to **false**, will omit your public projects on github
 * `os_projects_title`: The will be displayed as the title of your open source projects
 
+## Contact Section
+
+* `show_contact_card`:
+  * setting this to **true**, will display the Contact section
+  * setting this to **false**, will omit the Contact section
+* `contact_title`: The will be displayed as the title in the Contact section
+* `contact_description`: This will be displayed under the title.
+
 ## Github Metadata
 
 * `repository`:

@@ -55,6 +55,11 @@
         {% include section-projects.html %}
       </section>
     {% endif %}
+    {%if site.show_contact_card %}
+    <section class="card neumorphism-card-big">
+      {% include section-contact.html %}
+    </section>
+    {% endif %}
   </div>
   {% include footer.html %}
 </body>
