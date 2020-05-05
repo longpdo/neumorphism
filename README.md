@@ -2,6 +2,8 @@
 
 > Neumorphism designed Jekyll theme for personal websites, portfolios and resumes.
 
+* Featured on [JAMstack Themes](https://jamstackthemes.dev/theme/jekyll-neumorphism/)
+
 [![Open Issues](https://badgen.net/github/open-issues/longpdo/neumorphism)](https://github.com/longpdo/neumorphism/issues)
 [![License](https://badgen.net/github/license/longpdo/neumorphism)](LICENSE)
 

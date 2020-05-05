@@ -32,6 +32,11 @@
   * setting this to **false**, will omit the About Me section
 * `about_me_title`: The will be displayed as the title in the About Me section
 * `about_me_description`: This will be displayed under the title.
+  * You can add and style website links with this HTML template inside every **section_description**, e.g. checkout the current `about_me_description`:
+
+  ```html
+  <a class="highlight-link" href="https://github.com/longpdo/neumorphism" target="_blank" rel="noreferrer"> Github </a>
+  ```
 
 ## Skills Section
 
