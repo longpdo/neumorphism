@@ -1,11 +1,15 @@
-// Fade out preloader
-setTimeout(function() {
-  fadeOutPreloader(document.getElementById('preloader'), 69);
-}, 1500);
+window.onbeforeunload = function() {
+  window.scrollTo(0, 0);
+};
 
 document.addEventListener(
   'DOMContentLoaded',
   function() {
+    // Fade out preloader
+    setTimeout(function() {
+      fadeOutPreloader(document.getElementById('preloader'), 69);
+    }, 1500);
+
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
     particlesJS.load('landing', 'assets/particles.json', function() {});
 

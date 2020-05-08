@@ -578,6 +578,16 @@ a {
   }
 }
 
+.project-stars-forks {
+  fill: $text-color;
+  margin-right: 0.5rem;
+
+  .svg-wrapper {
+    padding-right: 0.2rem;
+    vertical-align: text-bottom;
+  }
+}
+
 .tag-wrapper {
   margin: 0.5rem 0 0 0;
 }
