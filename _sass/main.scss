@@ -11,7 +11,6 @@ $font-family: "Raleway", sans-serif;
 $font-size-base: 1rem !default;
 $font-size-h1: 2rem !default;
 $font-weight-strong: 600;
-$base-line-height: 1.5rem;
 $text-color: #fff !default;
 $bg-color: rgba(43, 45, 47, 1);
 $card-bg-color: linear-gradient(
@@ -30,7 +29,6 @@ html {
   font-size: $font-size-base;
   font-weight: normal;
   height: 100%;
-  line-height: $base-line-height;
   overflow: hidden;
 }
 
@@ -577,13 +575,17 @@ a {
   margin: 1rem 0.5rem;
 }
 
+.project-desc {
+  line-height: 1rem;
+}
+
 .project-stars-forks {
   fill: $text-color;
   margin-right: 0.5rem;
 }
 
 .tag-wrapper {
-  margin: 0.5rem 0 0 0;
+  margin: 1rem 0 0 0;
 }
 
 .tag {
