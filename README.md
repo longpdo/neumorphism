@@ -24,9 +24,9 @@
   * [Installation](#installation)
 * [Usage](#usage)
   * [Personalize and Customize](#personalize-and-customize)
-    * [_config.yml](#configyml)
+    * [_config.yml](#_configyml)
     * [Github Metadata Plugin](#github-metadata-plugin)
-    * [_data/*.yml](#datayml)
+    * [_data/*.yml](#_datayml)
     * [Particles.js](#particlesjs)
 * [Contributing](#contributing)
 * [License](#license)
@@ -110,16 +110,10 @@ yarn
 
 ## Usage
 
-* Run and develop locally with live server at `http://localhost:4000`
+* Run and develop locally with live server at `http://localhost:4000`, this will also build production-ready `JS` and `SCSS` assets with every change
 
 ```sh
 gulp
-```
-
-* Build production to minify `JS` and `SCSS` assets before pushing to upstream
-
-```sh
-gulp build
 ```
 
 * After committing and pushing, see the `Settings` page of your repository to see where your site is published at via `Github Pages`.

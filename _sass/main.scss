@@ -273,6 +273,10 @@ a {
       width: 100%;
     }
 
+    .social-svg {
+      fill: white;
+    }
+
     .label {
       display: none;
     }
@@ -287,8 +291,8 @@ a {
         fill-opacity: 1;
       }
 
-      .social {
-        color: #000;
+      .social-svg {
+        fill: #000;
       }
 
       .label {
@@ -304,8 +308,8 @@ a {
       animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
         colorEmail 1s linear forwards;
     }
-    .social {
-      color: #d44638;
+    .social-svg {
+      fill: #d44638;
     }
   }
 
@@ -314,8 +318,8 @@ a {
       animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
         colorLinkedin 1s linear forwards;
     }
-    .social {
-      color: #007bb6;
+    .social-svg {
+      fill: #007bb6;
     }
   }
 
@@ -324,8 +328,8 @@ a {
       animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
         colorTwitter 1s linear forwards;
     }
-    .social {
-      color: #1da1f2;
+    .social-svg {
+      fill: #1da1f2;
     }
   }
 
@@ -571,21 +575,11 @@ a {
 .project .name-link-wrapper .links {
   font-size: 1.5rem;
   margin: 1rem 0.5rem;
-
-  a:hover {
-    animation: jump 1s infinite alternate;
-    position: relative;
-  }
 }
 
 .project-stars-forks {
   fill: $text-color;
   margin-right: 0.5rem;
-
-  .svg-wrapper {
-    padding-right: 0.2rem;
-    vertical-align: text-bottom;
-  }
 }
 
 .tag-wrapper {
@@ -606,7 +600,6 @@ a {
   justify-content: center;
 
   .social-link {
-    color: $primary-color;
     position: relative;
     height: 3rem;
     line-height: 3rem;
@@ -618,31 +611,35 @@ a {
       font-size: 1.5rem;
     }
 
+    .social-svg {
+      fill: $primary-color;
+    }
+
     &:hover {
       cursor: pointer;
       animation: jump 1s infinite alternate;
 
-      .social {
-        color: $text-color;
+      .social-svg {
+        fill: $text-color;
       }
     }
   }
 
   .black:hover {
-    .social {
-      color: #000;
+    .social-svg {
+      fill: #000;
     }
   }
 
   .linkedin:hover {
-    .social {
-      color: #007bb6;
+    .social-svg {
+      fill: #007bb6;
     }
   }
 
   .twitter:hover {
-    .social {
-      color: #1da1f2;
+    .social-svg {
+      fill: #1da1f2;
     }
   }
 }
