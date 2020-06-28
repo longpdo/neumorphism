@@ -88,19 +88,22 @@ npm install -g yarn
 
 ### Installation
 
-1: Clone the repository
+1: Fork the repository (using the `Fork` button at the top)
+
+2: Clone the repository
 
 ```sh
-git clone https://github.com/longpdo/neumorphism.git
+# Replace {YOUR_USERNAME} with your actual username
+git clone https://github.com/{YOUR_USERNAME}/neumorphism.git
 ```
 
-2: Change directory into neumorphism
+3: Change directory into neumorphism
 
 ```sh
 cd neumorphism
 ```
 
-3: Install dependencies
+4: Install dependencies
 
 ```sh
 yarn
