@@ -88,22 +88,31 @@ npm install -g yarn
 
 ### Installation
 
-1: Fork the repository (using the `Fork` button at the top)
+> Recommended way: If you want to contribute to this theme or open issues due to problems implementing this on your own, I would recommend forking the repository directly. This makes it easier for me to solve open issues and questions or check pull requests.
 
-2: Clone the repository
+1.1: Fork the repository (using the `Fork` button at the top) and then clone the repository
 
 ```sh
 # Replace {YOUR_USERNAME} with your actual username
 git clone https://github.com/{YOUR_USERNAME}/neumorphism.git
 ```
 
-3: Change directory into neumorphism
+or
+
+1.2: Create your own repository (using the green `Use this template` button at the top) and then clone the repository
+
+```sh
+# Replace {YOUR_USERNAME}, {YOUR_REPOSITORY} with the actual values
+git clone https://github.com/{YOUR_USERNAME}/{YOUR_REPOSITORY}.git
+```
+
+2: Change directory into neumorphism
 
 ```sh
 cd neumorphism
 ```
 
-4: Install dependencies
+3: Install dependencies
 
 ```sh
 yarn
