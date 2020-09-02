@@ -2,18 +2,18 @@
 
 ## General Site Settings
 
-* `title`: This will be displayed as the website's name in your browser tab.
+* `title`: Rhyan's Portfolio
 * `description`: This will be meta HTML tag content. This can be ignored.
-* `baseurl`: The subpath of your site
+* `baseurl`: **""**
   * set this to **""**, if you renamed the repository to `<user>.github.io`
 
 ## Landing Page
 
-* `username`: This will displayed on the landing page as your name.
+* `username`: Rhyan Jenkins
 
-* `typing_text`: This will be text, which will be typed before *scroll down for more*.
+* `typing_text`: Front-End Engineer *scroll down for more*.
   * set this to your job title, e.g. **Fullstack Developer**
-* `email`: Your E-Mail address for the email button.
+* `email`: rhyansolis94@gmail.com
 * Social Link buttons:
   * For every social button you want to display, set your username or userid
   * Usernames or ids can usually be taken from your profile links
@@ -27,7 +27,7 @@
 
 ## About Me Section
 
-* `show_aboutme_card`:
+* `show_aboutme_card`:**true**
   * setting this to **true**, will display the About Me section
   * setting this to **false**, will omit the About Me section
 * `about_me_title`: The will be displayed as the title in the About Me section
