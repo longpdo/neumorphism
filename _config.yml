@@ -2,10 +2,10 @@
 
 # GENERAL SITE SETTINGS
 # title: This will be displayed as the website's name in your browser tab.
-title: Neumorphism
+title: portfolio
 # description: This will be meta HTML tag content. This can be ignored.
 description: Personal website powered by Jekyll
-# baseurl: The subpath of your site
+# baseurl: "xorrbs100.github.io/portfolio"
 # > set this to "", if you renamed the repository to <user>.github.io
 baseurl: "/neumorphism"
 
