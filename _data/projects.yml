@@ -31,3 +31,6 @@
 
 - name: project Z
   descr: "You can also set a project without demo link and no tags"
+
+  - name: Dream Corps project
+    descr: "Worked on java project in which we made something similar to netflix app"
