@@ -4,11 +4,12 @@
 # title: This will be displayed as the website's name in your browser tab.
 title: Lucky's Porfolio
 # description: This will be meta HTML tag content. This can be ignored.
-description: Personal website powered by Jekyll
+description: Welcome To My Portfolio
 # baseurl: The subpath of your site
 # > set this to "", if you renamed the repository to <user>.github.io
-url: "https://luckyaden.github.io"
 baseurl: "/neumorphism" 
+url: "https://luckyaden.github.io"
+
 
 
 # LANDING PAGE
