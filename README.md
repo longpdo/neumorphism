@@ -119,6 +119,7 @@ cd neumorphism
 
 ```sh
 yarn
+bundle install
 ```
 
 <!-- USAGE EXAMPLES -->
@@ -128,7 +129,7 @@ yarn
 * Run and develop locally with live server at `http://localhost:4000`, this will also build production-ready `JS` and `SCSS` assets with every change
 
 ```sh
-gulp
+yarn dev
 ```
 
 * After committing and pushing, see the `Settings` page of your repository to see where your site is published at via `Github Pages`.
