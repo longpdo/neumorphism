@@ -30,7 +30,7 @@ twitter_username: exampleUser
 # show_aboutme_card:
 # > setting this to true, will display the About Me section
 # > setting this to false, will omit the About Me section
-show_aboutme_card: true
+show_aboutme_card: false
 # about_me_title: The will be displayed as the title in the About Me section
 about_me_title: About Me
 # about_me_description: This will be displayed under the title.
