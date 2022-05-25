@@ -119,6 +119,7 @@ cd neumorphism
 
 ```sh
 yarn
+bundle install
 ```
 
 <!-- USAGE EXAMPLES -->
