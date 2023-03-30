@@ -34,8 +34,7 @@ show_aboutme_card: true
 # about_me_title: The will be displayed as the title in the About Me section
 about_me_title: About Me
 # about_me_description: This will be displayed under the title.
-about_me_description: SEAYA's의 Blog입니다. <a class="highlight-link" href="https://github.com/Seaya-do" target="_blank" rel="noreferrer"> Github </a> |  Naver-Blog<a class="highlight-link" href="https://blog.naver.com/womzz6890"></a> |
- /jamstackthemes/ <a class="highlight-link" href="https://jamstackthemes.dev/theme/jekyll-neumorphism/" target="_blank" rel="noreferrer">JAMstack Themes</a> and on <a class="highlight-link" href="https://jekyll-themes.com/neumorphism/" target="_blank" rel="noreferrer">Jekyll Themes</a>.
+about_me_description: SEAYA's의 Blog입니다. <a class="highlight-link" href="https://github.com/Seaya-do" target="_blank" rel="noreferrer"> Github </a>|Naver-Blog <a class="highlight-link" href="https://blog.naver.com/womzz6890/" target="_blank" rel="noreferrer">|JAMstack Themes</a> and on <a class="highlight-link" href="https://jekyll-themes.com/neumorphism/" target="_blank" rel="noreferrer">Jekyll Themes</a>.
 
 # SKILLS SECTION
 # show_skills_card:
