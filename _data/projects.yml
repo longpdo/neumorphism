@@ -23,12 +23,12 @@
     - tag: Python
 
 - name: project Y
-  descr: "날씨API를 이용한 날씨앱 만들기"
-  demo: https://example.com/
+  descr: "daum Cafe화면 클론코딩"
+  demo: https://github.com/Seaya-do/cafe_work/
   tags:
-    - tag: Android
-    - tag: HTML/CSS/JS 
-    - tag: Slick
+    - tag: HTML
+    - tag: CSS
+    - tag: Javascript
 
 - name: project Z
   descr: "You can also set a project without demo link and no tags"
