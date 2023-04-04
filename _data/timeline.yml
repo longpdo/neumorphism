@@ -17,45 +17,45 @@
 #     - tag: Rails
 #   timeline-side: right
 
-- title: airbnb
+- title: BIT_Camp 
   title-url: https://example.com/
-  date: Sep 2019 - Present
-  subtitle: Fullstack Developer
+  date: Jul 2018 - Jan 2019
+  subtitle: UI/UX기반의 자바개발자과정 수료
   tags:
-    - tag: React
+    - tag: Android
     - tag: Javascript
-    - tag: Ruby
-    - tag: Rails
+    - tag: Java
+    - tag: GitHub
   timeline-side: right
 
-- title: Google
+- title: EZEN
   title-url: https://example.com/
-  date: Mar 2019 - Sep 2019
-  subtitle: Software Engineer as Intern
+  date: Jan 2023 - Jul 2023
+  subtitle: FullStack 자바웹개발자 과정 
   tags:
-    - tag: Flutter
-    - tag: Dart
-    - tag: Keycloak
+    - tag: Java
+    - tag: Javascript
+    - tag: HTML/CSS
   timeline-side: right
 
-- title: Super University
-  title-url: https://example.com/
-  date: 2017 - 2019
-  subtitle: M.Sc. Computer Science
+- title: 경희사이버대 재학
+  title-url: https://www.khcu.ac.kr/main/index.do
+  date: 2022 -  present
+  subtitle: AI사이버보안전공 
   timeline-side: left
 
-- title: Facebook
+- title: IT-KOREA(Linux) 수료
   title-url: https://example.com/
-  date: Sep 2017 - Mar 2019
-  subtitle: Front-End Developer as Intern
+  date: Oct 2022 - Dec 2022 (2month)
+  subtitle: Linux Study
   tags:
-    - tag: React
-    - tag: Node
-    - tag: Javascript
+    - tag: Linux
+    - tag: Server
+    - tag: Samba
   timeline-side: right
 
-- title: Super University
+- title: IT-KOREA(SQL) 수료
   title-url: https://example.com/
-  date: 2014 - 2017
-  subtitle: B.A. Computer Science
+  date: Aug 2022 - Oct 2022(2month)
+  subtitle: Oracle SQL 
   timeline-side: left

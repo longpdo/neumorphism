@@ -11,13 +11,13 @@
 - name: Bash
   weight: 3
 
-- name: Scrum
+- name: OracleDB
   weight: 3
 
-- name: Travis CI
+- name: PowerShell
   weight: 1
 
-- name: Jenkins
+- name: Linux
   weight: 1
 
 - name: Chrome DevTools
@@ -26,11 +26,11 @@
 - name: npm
   weight: 2
 
-- name: gulp
+- name: Pycham
   weight: 4
 
 - name: VS Code
   weight: 3
 
-- name: Postman
+- name: NaverBlog
   weight: 4
