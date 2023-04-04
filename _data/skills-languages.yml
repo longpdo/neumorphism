@@ -21,10 +21,10 @@
   weight: 3
 
 - name: Java
-  weight: 1
+  weight: 3
 
 - name: C
-  weight: 1
+  weight: 2
 
 - name: Ruby
   weight: 2
