@@ -44,18 +44,18 @@
   subtitle: AI사이버보안전공 
   timeline-side: left
 
-- title: 예정
+- title: IT-KOREA(Linux) 수료
   title-url: https://example.com/
-  date: Sep 2017 - Mar 2019
-  subtitle: Front-End Developer as Intern
+  date: Oct 2022 - Dec 2022 (2month)
+  subtitle: Linux Study
   tags:
-    - tag: React
-    - tag: Node
-    - tag: Javascript
+    - tag: Linux
+    - tag: Server
+    - tag: Samba
   timeline-side: right
 
-- title: 예정
+- title: IT-KOREA(SQL) 수료
   title-url: https://example.com/
-  date: 2014 - 2017
-  subtitle: B.A. Computer Science
+  date: Aug 2022 - Oct 2022(2month)
+  subtitle: Oracle SQL 
   timeline-side: left
