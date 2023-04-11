@@ -5,23 +5,20 @@
 # - name: Git
 #   weight: 5
 
-- name: Git
+- name: PostgreSQL
   weight: 5
 
-- name: Bash
+- name: MySQL
   weight: 3
 
-- name: Scrum
-  weight: 3
+- name: Oracle
+  weight: 1
 
-- name: Jenkins
+- name: Netezza
   weight: 2
 
-- name: VS Code
+- name: DynamoDB
   weight: 3
 
-- name: Postman
-  weight: 4
-
-- name: PyCharm
+- name: TimestreamDB
   weight: 3

@@ -1,0 +1,48 @@
+# > name: Name of your Dev Tool
+# > weight: Describes how good you know the tool - values from 1 up to 5
+#
+# Example of a Dev Tool
+# - name: Git
+#   weight: 5
+
+- name: S3
+  weight: 5
+
+- name: EC2
+  weight: 3
+
+- name: ECS
+  weight: 4
+
+- name: EKS
+  weight: 1
+
+- name: IAM
+  weight: 2
+
+- name: SQS
+  weight: 2
+
+- name: SNS
+  weight: 2
+
+- name: Lambda
+  weight: 4
+
+- name: ELB
+  weight: 2
+
+- name: EBS&EFS
+  weight: 2
+
+- name: Azure Blob Storage
+  weight: 2
+
+- name: Azure Functions
+  weight: 2
+
+- name: Azure Virtual Machines
+  weight: 2
+
+- name: Azure Databricks
+  weight: 2

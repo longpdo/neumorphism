@@ -7,6 +7,10 @@
   <label class="filter-button neumorphism-button" for="language">Languages</label>
   <input type="radio" id="framework" name="filter" />
   <label class="filter-button neumorphism-button" for="framework">Frameworks</label>
+  <input type="radio" id="db" name="filter" />
+  <label class="filter-button neumorphism-button" for="db">Databases</label>
+  <input type="radio" id="cloud" name="filter" />
+  <label class="filter-button neumorphism-button" for="cloud">Cloud</label>
   <input type="radio" id="tool" name="filter" />
   <label class="filter-button neumorphism-button" for="tool">Tools</label>
 
@@ -18,6 +22,16 @@
   {% for framework in site.data.skills-frameworks %}
     <div skill-type="framework" skill-weight="{{framework.weight}}" data-aos="zoom-in">
       {{framework.name}}
+    </div>
+  {% endfor %}
+  {% for db in site.data.skills-db %}
+    <div skill-type="db" skill-weight="{{db.weight}}" data-aos="zoom-in">
+      {{db.name}}
+    </div>
+  {% endfor %}
+  {% for cloud in site.data.skills-cloud %}
+    <div skill-type="cloud" skill-weight="{{cloud.weight}}" data-aos="zoom-in">
+      {{cloud.name}}
     </div>
   {% endfor %}
   {% for tool in site.data.skills-tools %}

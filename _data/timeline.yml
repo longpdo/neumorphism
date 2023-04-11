@@ -17,45 +17,102 @@
 #     - tag: Rails
 #   timeline-side: right
 
-- title: airbnb
-  title-url: https://example.com/
-  date: Sep 2019 - Present
-  subtitle: Fullstack Developer
+- title: Syngenta
+  title-url: https://www.syngenta.com
+  date: Sep 2022 - Present
+  subtitle: Senior Software Engineer
   tags:
-    - tag: React
-    - tag: Javascript
-    - tag: Ruby
-    - tag: Rails
-  timeline-side: right
-
-- title: Google
-  title-url: https://example.com/
-  date: Mar 2019 - Sep 2019
-  subtitle: Software Engineer as Intern
-  tags:
-    - tag: Flutter
-    - tag: Dart
-    - tag: Keycloak
-  timeline-side: right
-
-- title: Super University
-  title-url: https://example.com/
-  date: 2017 - 2019
-  subtitle: M.Sc. Computer Science
+    - tag: Python
+    - tag: FastAPI
+    - tag: TimeStreamDB
+    - tag: DynamoDB
+    - tag: PostgreSQL
+    - tag: AWS
   timeline-side: left
 
-- title: Facebook
-  title-url: https://example.com/
-  date: Sep 2017 - Mar 2019
-  subtitle: Front-End Developer as Intern
+- title: T-Mobile
+  title-url: https://www.t-mobile.com/
+  date: Feb 2022 - Aug 2022
+  subtitle: Senior Software Engineer
   tags:
+    - tag: Python
+    - tag: FastAPI
+    - tag: RDS(MySQL)
+    - tag: EKS
+    - tag: AWS
     - tag: React
-    - tag: Node
-    - tag: Javascript
   timeline-side: right
 
-- title: Super University
-  title-url: https://example.com/
-  date: 2014 - 2017
-  subtitle: B.A. Computer Science
+- title: UL
+  title-url: https://www.ul.com/
+  date: Feb 2021 - Feb 2022
+  subtitle: Senior Software Engineer
+  tags:
+    - tag: Python
+    - tag: Flask
+    - tag: S3
+    - tag: ECS
+    - tag: AWS
+    - tag: Jenkins
   timeline-side: left
+
+- title: Fission Labs
+  title-url: https://www.fissionlabs.com/
+  date: Jan 2020 - Feb 2021
+  subtitle: Senior Software Engineer
+  tags:
+    - tag: Python
+    - tag: Flask
+    - tag: S3
+    - tag: ECS
+    - tag: AWS
+    - tag: Airflow
+  timeline-side: right
+
+- title: Path Presenter
+  title-url: https://www.pathpresenter.com/
+  date: Jun 2019 - Dec 2019
+  subtitle: Senior Software Engineer
+  tags:
+    - tag: Python
+    - tag: Flask
+    - tag: S3
+    - tag: ECS
+    - tag: AWS
+    - tag: Jenkins
+  timeline-side: left
+
+- title: Virgin Media
+  title-url: https://www.virginmedia.com/
+  date: Mar 2018 - May 2019
+  subtitle: Software Engineer
+  tags:
+    - tag: Java
+    - tag: JavaFx
+    - tag: Flask
+    - tag: Python
+    - tag: AWS
+  timeline-side: right
+
+- title: Virgin Media
+  title-url: https://www.virginmedia.com/
+  date: Jun 2012 - Feb 2018
+  subtitle: Data Engineer
+  tags:
+    - tag: Informatica
+    - tag: Hive
+    - tag: Hadoop
+    - tag: PySpark
+    - tag: Python
+  timeline-side: left
+
+- title: KL University
+  title-url: https://www.kluniversity.in/
+  date: Aug 2006 - Mar 2010
+  subtitle: B.Tech in Computer Science and Engineering
+  tags:
+    - tag: Data Structures and Algorithms
+    - tag: Operating Systems
+    - tag: Database Management Systems
+    - tag: Theory Of Computation
+  timeline-side: right

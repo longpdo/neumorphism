@@ -403,6 +403,14 @@ a {
     color: #fecea8;
   }
 
+  div[skill-type="db"] {
+    color: #e270da;
+  }
+
+  div[skill-type="cloud"] {
+    color: #3e8be3;
+  }
+
   div[skill-weight="1"] {
     font-size: 0.75rem;
     line-height: 0.25rem;
@@ -733,19 +741,40 @@ a {
     }
 
     input[id="language"]:checked ~ div[skill-type="framework"],
-    input[id="language"]:checked ~ div[skill-type="tool"] {
+    input[id="language"]:checked ~ div[skill-type="tool"],
+    input[id="language"]:checked ~ div[skill-type="db"],
+    input[id="language"]:checked ~ div[skill-type="cloud"] {
       @include filter-out;
     }
 
     input[id="framework"]:checked ~ div[skill-type="language"],
-    input[id="framework"]:checked ~ div[skill-type="tool"] {
+    input[id="framework"]:checked ~ div[skill-type="tool"],
+    input[id="framework"]:checked ~ div[skill-type="db"],
+    input[id="framework"]:checked ~ div[skill-type="cloud"] {
+      @include filter-out;
+    }
+
+    input[id="cloud"]:checked ~ div[skill-type="language"],
+    input[id="cloud"]:checked ~ div[skill-type="framework"],
+    input[id="cloud"]:checked ~ div[skill-type="tool"],
+    input[id="cloud"]:checked ~ div[skill-type="db"]  {
       @include filter-out;
     }
 
     input[id="tool"]:checked ~ div[skill-type="language"],
-    input[id="tool"]:checked ~ div[skill-type="framework"] {
+    input[id="tool"]:checked ~ div[skill-type="framework"],
+    input[id="tool"]:checked ~ div[skill-type="db"],
+    input[id="tool"]:checked ~ div[skill-type="cloud"]  {
       @include filter-out;
     }
+
+    input[id="db"]:checked ~ div[skill-type="language"],
+    input[id="db"]:checked ~ div[skill-type="framework"],
+    input[id="db"]:checked ~ div[skill-type="tool"],
+    input[id="db"]:checked ~ div[skill-type="cloud"]  {
+      @include filter-out;
+    }
+    
   }
 
   .timeline-wrapper {
@@ -843,7 +872,7 @@ a {
   }
 
   #skills .filter-button {
-    width: 21.5%;
+    width: 13%;
   }
 
   .timeline-wrapper {
@@ -873,7 +902,7 @@ a {
   }
 
   #skills .filter-button {
-    width: 22%;
+    width: 13.8%;
   }
 
   .timeline-wrapper {

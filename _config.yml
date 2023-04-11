@@ -2,29 +2,29 @@
 
 # GENERAL SITE SETTINGS
 # title: This will be displayed as the website's name in your browser tab.
-title: Neumorphism
+title: Vamsi Krishna's personal website
 # description: This will be meta HTML tag content. This can be ignored.
-description: Personal website powered by Jekyll
+description: Vamsi Krishna's blog
 # baseurl: The subpath of your site
 # > set this to "", if you renamed the repository to <user>.github.io
-baseurl: "/neumorphism"
+baseurl: ""
 
 # LANDING PAGE
 # username: This will displayed on the landing page as your name.
-username: Neumorphism
+username: Vamsi Krishna Kolluri
 # typing_text: This will be typed before 'scroll down for more'.
 # > set this to your job title, e.g. Fullstack Developer
-typing_text: Jekyll Theme
+typing_text: Senior Software Engineer
 # email: Your E-Mail address for the email button.
-email: email@example.com
+email: vamsi@kolluri.dev
 # For every social button you want to display, set your username or userid
 # If you do not use one of the following websites, then leave it empty
 # > twitter_username:
-github_username: longpdo
-codepen_username: exampleUser
-dev_username: exampleUser
-linkedin_username: exampleUser
-twitter_username: exampleUser
+github_username: krishna-000
+codepen_username: 
+dev_username: 
+linkedin_username: vamsi-krishna-a15849249
+twitter_username: 
 
 # ABOUT ME SECTION
 # show_aboutme_card:
@@ -34,8 +34,20 @@ show_aboutme_card: true
 # about_me_title: The will be displayed as the title in the About Me section
 about_me_title: About Me
 # about_me_description: This will be displayed under the title.
-about_me_description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. If you like this theme and want to use it for yourself, checkout the source code and the documentation at <a class="highlight-link" href="https://github.com/longpdo/neumorphism" target="_blank" rel="noreferrer"> Github </a>. You can also find me on <a class="highlight-link" href="https://jamstackthemes.dev/theme/jekyll-neumorphism/" target="_blank" rel="noreferrer">JAMstack Themes</a> and on <a class="highlight-link" href="https://jekyll-themes.com/neumorphism/" target="_blank" rel="noreferrer">Jekyll Themes</a>.
+about_me_description: |
+  As a Back-End Developer with 10 years of experience, I have had the opportunity to work on a wide range of projects involving various technologies and tools. My primary focus has been on designing, developing, and maintaining complex back-end systems.
 
+  <br/><br/>
+
+  With experience in FastAPI, Flask, and SQLAlchemy, I have gained expertise in building efficient and scalable back-end systems. I have worked on developing RESTful APIs, managing database interactions, and creating data models. My proficiency in FastAPI has enabled me to utilize modern Python features to build high-performance APIs.My proficiency in pytest enables me to create and execute tests that meticulously check the functionality and performance of software systems.Additionally, my knowledge of other unit test libraries enables me to tailor tests to meet the specific requirements of each project
+
+  <br/><br/>
+
+  Over the years, I have gained experience in data warehousing and have worked extensively with Informatica, Hive and PySpark for ETL processes. I have also acquired proficiency in cloud computing and have worked with AWS and Azure services. I have worked with various AWS services, including S3, ECS, SQS, SNS, Lambda, IAM, ELB, and DynamoDB. Additionally, I have experience working with Azure services like Blob, Azure Functions, and Azure VM. My experience with AWS services, such as Lambda, TimeStream DB, DynamoDB, and Step Functions, has equipped me with a strong skill set in designing and deploying serverless architectures and developing scalable applications
+
+  <br/><br/>
+
+  I have experience with containerization and have worked with Docker and Kubernetes. I am also familiar with Agile methodology and have worked on sprints to deliver projects on time. I have used Jenkins for continuous integration and deployment. Overall, my comprehensive understanding of DevOps pipeline tools like GitLab equips me to deliver top-quality software solutions that meet business needs and comply with industry standards.
 # SKILLS SECTION
 # show_skills_card:
 # > setting this to true, will display the Skills section
@@ -54,22 +66,23 @@ timeline_title: Education & Experience
 # cv_download_link: The link where you host your cv.
 # > e.g. you share your cv on your dropbox, then add the dropbox link here
 cv_download_link: https://example.com/
+resume_link: resume.pdf
 
 # PROJECTS SECTION
 # show_projects_card:
 # > setting this to true, will display the Projects section
 # > setting this to false, will omit the Projects section
-show_projects_card: true
+show_projects_card: false
 # show_projects:
 # > setting this to true, will display your listed projects in _data/projects.yml
 # > setting this to false, will omit your listed projects
-show_projects: true
+show_projects: false
 # projects_title: The will be displayed as the title of your projects
 projects_title: Projects
 # show_os_projects:
 # > setting this to true, will display your public projects on github
 # > setting this to false, will omit your public projects on github
-show_os_projects: true
+show_os_projects: false
 # os_projects_title: The will be displayed as the title of your open source projects
 os_projects_title: Open Source Projects
 
@@ -81,8 +94,7 @@ show_contact_card: true
 # contact_title: The will be displayed as the title in the Contact section
 contact_title: Contact
 # contact_description: This will be displayed under the title.
-contact_description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. If you like this theme and want to use it for yourself, checkout the source code and the documentation at <a class="highlight-link" href="https://github.com/longpdo/neumorphism" target="_blank" rel="noreferrer"> Github </a>.
-
+contact_description: Reach me out for any consultation or contract work
 # GITHUB-METADATA
 # Set this to your forked repository
 # > e.g. <user>/<user>.github.io
