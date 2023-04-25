@@ -333,6 +333,16 @@ a {
     }
   }
 
+  .stack-overflow:hover {
+    .circle {
+      animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
+      colorStackOverflow 1s linear forwards;
+    }
+    .social-svg {
+      fill: #f48224;
+    }
+  }
+
   @keyframes outWaveIn {
     to {
       stroke-dasharray: 510;
@@ -374,6 +384,12 @@ a {
   @keyframes colorTwitter {
     to {
       stroke: #1da1f2;
+    }
+  }
+
+  @keyframes colorStackOverflow {
+    to {
+      stroke: #f48224;
     }
   }
 }
