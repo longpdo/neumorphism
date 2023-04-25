@@ -279,6 +279,8 @@ a {
 
     .label {
       display: none;
+      white-space: nowrap;
+      position: absolute;
     }
 
     &:hover {
@@ -297,8 +299,9 @@ a {
 
       .label {
         display: unset !important;
-        position: relative;
-        top: -2rem;
+        bottom: -2.5rem;
+        left: 50%;
+        transform: translate(-50%);
       }
     }
   }
@@ -326,10 +329,20 @@ a {
   .twitter:hover {
     .circle {
       animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
-        colorTwitter 1s linear forwards;
+      colorTwitter 1s linear forwards;
     }
     .social-svg {
       fill: #1da1f2;
+    }
+  }
+
+  .stack-overflow:hover {
+    .circle {
+      animation: outWaveIn 1s cubic-bezier(0.42, 0, 0.58, 1) forwards,
+      colorStackOverflow 1s linear forwards;
+    }
+    .social-svg {
+      fill: #f48224;
     }
   }
 
@@ -374,6 +387,12 @@ a {
   @keyframes colorTwitter {
     to {
       stroke: #1da1f2;
+    }
+  }
+
+  @keyframes colorStackOverflow {
+    to {
+      stroke: #f48224;
     }
   }
 }

@@ -103,6 +103,22 @@
           <span class="label">Twitter</span>
         </a>
       {% endif %}
+
+      {% if site.stack_overflow_user_id != null %}
+        <a class="social-link stack-overflow" aria-label="My Stack Overflow" target="_blank"
+           rel="noreferrer" href="https://stackoverflow.com/users/{{site.stack_overflow_user_id}}"
+        >
+          <svg viewBox="0 0 200 200" class="circle">
+            <circle cx="100" cy="100" r="80" />
+          </svg>
+          <div class="social">
+            <svg class="social-svg" viewBox="0 0 48 48">
+              <use x="12" y="12" width="24" height="24" viewBox="0 0 48 48" xlink:href="{{ "/assets/img/brands.svg#stack-overflow" | prepend: site.baseurl }}"></use>
+            </svg>
+          </div>
+          <span class="label">StackOverflow</span>
+        </a>
+      {% endif %}
     </div>
   </div>
 </div>
