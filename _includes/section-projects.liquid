@@ -6,12 +6,21 @@
         <div class="name-link-wrapper">
           <h3>{{project.name}}</h3>
         </div>
-        <p class="project-desc">{{project.descr}}</p>
-        {% if project.demo %}
-          <a class="highlight-link" href="{{project.demo}}" target="_blank" rel="noreferrer">
-            Demo
-          </a>
-        {% endif %}
+        <div>
+          <p class="project-desc">{{project.descr}}</p>
+        </div>
+        <div class="project_footer">
+          {% if project.demo %}
+            <a class="highlight-link" href="{{project.demo}}" target="_blank" rel="noreferrer">
+              Demo
+            </a>
+          {% endif %}
+          {% if project.github %}
+            <a class="highlight-link" href="{{project.github}}" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+          {% endif %}
+        </div>
         {% if project.tags %}
           <div class="tag-wrapper">
             {% for tag in project.tags %}
@@ -27,20 +36,25 @@
 {% if site.show_os_projects %}
   <h1 class="title">{{site.os_projects_title}}</h1>
   {% if site.projects.sort_by == 'stars' %}
-    {% assign sort_order = 'stargazers_count', 'last' %}
+    {% assign sort_order = 'stargazers_count' %}
   {% else %}
     {% assign sort_order = 'pushed_at' %}
   {% endif %}
 
-  {% if site.projects.exclude.archived && site.projects.exclude.forks %}
-    {% assign filtered_repos = site.github.public_repositories | where:'archived', false | where:'fork', false | sort: sort_order | reverse %}
-  {% elsif site.projects.exclude.archived %}
-    {% assign filtered_repos = site.github.public_repositories | where:'archived', false | sort: sort_order | reverse %}
-  {% elsif site.projects.exclude.forks %}
-    {% assign filtered_repos = site.github.public_repositories | where:'fork', false | sort: sort_order | reverse %}
-  {% else %}
-    {% assign filtered_repos = site.github.public_repositories | sort: sort_order | reverse %}
+
+  {% assign filtered_repos = site.github.public_repositories %}
+  {% assign filtered_repos = filtered_repos | where: 'private', false %}
+  {% if site.projects.exclude.archived %}
+    {% assign filtered_repos = filtered_repos | where: 'archived', false %}
   {% endif %}
+  {% if site.projects.exclude.forks %}
+    {% assign filtered_repos = filtered_repos | where: 'fork', false %}
+  {% endif %}
+  {% if site.projects.exclude.not_starred %}
+    {% assign filtered_repos = filtered_repos | where_exp: "item", "item.stargazers_count > 0" %}
+  {% endif %}
+  {% assign filtered_repos = filtered_repos | sort: sort_order | reverse %}
+
 
   <div class="projects-wrapper">
     {% for repository in filtered_repos %}
@@ -68,15 +82,19 @@
               {% endif %}
             </div>
           </div>
-          <p class="project-desc">{{repository.description}}</p>
-          {% if repository.homepage != "" and repository.homepage != nil %}
-            <a class="highlight-link" href="{{repository.homepage}}" target="_blank" rel="noreferrer">
-              Demo
+          <div>
+            <p class="project-desc">{{repository.description}}</p>
+          </div>
+          <div class="project_footer">
+            {% if repository.homepage and repository.homepage %}
+              <a class="highlight-link" href="{{repository.homepage}}" target="_blank" rel="noreferrer">
+                Demo
+              </a>
+            {% endif %}
+            <a class="highlight-link" href="{{repository.html_url}}" target="_blank" rel="noreferrer">
+              Github
             </a>
-          {% endif %}
-          <a class="highlight-link" href="{{repository.html_url}}" target="_blank" rel="noreferrer">
-            Github
-          </a>
+          </div>
           {% if repository.topics %}
             <div class="tag-wrapper">
               {% for topic in repository.topics %}
