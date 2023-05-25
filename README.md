@@ -175,17 +175,14 @@ Edit files inside `_data` to add information to the portfolio. For documentation
 You can add and remove skills. \
 Ex: adding **design** section
 
-`_config.yml`
+update `skills_types` in `_config.yml`
 ```yaml
-...
-# list of available skills
-skills:
+skills_types:
   - languages
   - frameworks
   - infrastructure
   - tools
   - design
-...
 ```
 
 Create the following file:

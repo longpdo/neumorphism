@@ -58,7 +58,7 @@ show_skills_card: true
 skills_title: Skills
 
 # list of available skills
-skills:
+skills_types:
   - languages
   - frameworks
   - infrastructure

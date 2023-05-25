@@ -4,7 +4,7 @@
   <input type="radio" id="all" name="filter" checked />
   <label class="filter-button neumorphism-button" for="all">All</label>
 
-  {% for skillType in site.skills %}
+  {% for skillType in site.skills_types %}
     {% assign skillPath = skillType | prepend: 'skills-' %}
     {% assign skillData = site.data[skillPath] | json %}
     <input type="radio" id="{{ skillType }}" name="filter" />
