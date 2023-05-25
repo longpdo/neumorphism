@@ -44,6 +44,7 @@
   * setting this to **true**, will display the Skills section
   * setting this to **false**, will omit the Skills section
 * `about_me_title`: The will be displayed as the title in the Skills section
+* `skills_types`: list of skills types
 
 ## Timeline Section
 

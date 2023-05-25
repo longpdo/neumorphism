@@ -61,9 +61,7 @@ skills_title: Skills
 skills_types:
   - languages
   - frameworks
-  - infrastructure
   - tools
-  - design
 
 ### TIMELINE SECTION ###
 
@@ -143,8 +141,6 @@ projects:
 
     # not_starred: remove all the projects without stars
     not_starred: true
-
-    description_empty: false
 
 # GOOGLE-ANALYTICS
 # Set the id, if you want to track your website with Google Analytics

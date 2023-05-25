@@ -30,12 +30,11 @@ $fifth-color: #9800AB;
 
 
 
-$skillsTypes: languages, frameworks, tools, infrastructure;
+$skillsTypes: languages, frameworks, tools;
 $skillsTypesColors: (
   languages: #FF987A,
   frameworks: #E8796F,
   tools: #E86FC8,
-  infrastructure: #EE7AFF
 );
 $skillsCount: calc(length($skillsTypes) + 1);
 $filterButtonWidthLarge: calc((100 - 2.5 * $skillsCount) / $skillsCount);
