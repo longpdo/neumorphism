@@ -24,6 +24,7 @@
     * `dev_username`:
     * `linkedin_username`: **longpdo**
     * `twitter_username`:
+    * `stack_overflow_user_id`:
 
 ## About Me Section
 
@@ -82,7 +83,7 @@
   * Set this to your forked repository
   * e.g. `<user>/<user>.github.io`
 * `projects`:
-  * `sortby`:
+  * `sort_by`:
     * set this to **pushed**, if you want to sort your github repositories by time.
     * set this to **stars**, if you want to sort your github repositories by stars.
   * `exclude`:
@@ -93,6 +94,9 @@
       * setting this to **true**, will exclude forked repositories
       * setting this to **false**, will also display forked repositories
     * `projects`: A list of the repository names you want to exclude from the listing.
+    * `not_starred`:
+      * setting this to **true**, will exclude 0 stars repositories
+      * setting this to **false**, will also display 0 stars repositories
 
 ## Google Analytics
 
