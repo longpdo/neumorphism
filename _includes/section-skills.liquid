@@ -1,0 +1,19 @@
+<h1 class="title">{{ site.skills_title }}</h1>
+
+<div id="skills">
+  <input type="radio" id="all" name="filter" checked />
+  <label class="filter-button neumorphism-button" for="all">All</label>
+
+  {% for skillType in site.skills_types %}
+    {% assign skillPath = skillType | prepend: 'skills-' %}
+    {% assign skillData = site.data[skillPath] | json %}
+    <input type="radio" id="{{ skillType }}" name="filter" />
+    <label class="filter-button neumorphism-button" for="{{ skillType }}">{{ skillType | capitalize }}</label>
+
+    {% for skill in skillData %}
+      <div skill-type="{{ skillType }}" skill-weight="{{ skill.weight }}" data-aos="zoom-in">
+        {{ skill.name }}
+      </div>
+    {% endfor %}
+  {% endfor %}
+</div>

@@ -30,34 +30,34 @@
       <hr />
     </div>
   </div>
-  {% include landing-page.html %}
+  {% include landing-page.liquid %}
   <div class="layout">
     {%if site.show_aboutme_card %}
       <section class="card neumorphism-card-big">
-        {% include section-aboutme.html %}
+        {% include section-aboutme.liquid %}
       </section>
     {% endif %}
     {%if site.show_skills_card %}
       <section class="card neumorphism-card-big">
-        {% include section-skills.html %}
+        {% include section-skills.liquid %}
       </section>
     {% endif %}
     {%if site.show_timeline_card %}
       <section class="card neumorphism-card-big">
-        {% include section-timeline.html %}
+        {% include section-timeline.liquid %}
       </section>
     {% endif %}
     {%if site.show_projects_card %}
       <section class="card neumorphism-card-big">
-        {% include section-projects.html %}
+        {% include section-projects.liquid %}
       </section>
     {% endif %}
     {%if site.show_contact_card %}
     <section class="card neumorphism-card-big">
-      {% include section-contact.html %}
+      {% include section-contact.liquid %}
     </section>
     {% endif %}
   </div>
-  {% include footer.html %}
+  {% include footer.liquid %}
 </body>
 </html>

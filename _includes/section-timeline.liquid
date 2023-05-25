@@ -1,0 +1,60 @@
+<h1 class="title">{{site.timeline_title}}</h1>
+{% if site.cv_download_link %}
+<p class="subtitle">
+  For more information, have a look at my
+
+  <a class="highlight-link" href="{{site.cv_download_link}}" target="_blank" rel="noreferrer">
+    C.V.
+  </a>
+</p>
+{% elsif site.data.curriculum-vitae %}
+<p class="subtitle">
+  For more information, have a look at my c.v.
+  {% for cv in site.data.curriculum-vitae %}
+    <a class="highlight-link" href="{{cv.link}}" target="_blank" rel="noreferrer">
+      {{ cv.language }}
+    </a>
+  {% endfor %}
+  .
+</p>
+{% endif %}
+
+<div class="timeline-wrapper">
+  <ul class="timeline">
+    {% for event in site.data.timeline %}
+        <li>
+          <div class="direction-l">
+            <div class="flag-wrapper">
+              <span class="hexagon"></span>
+              <span class="flag neumorphism-card" data-aos="zoom-in-right">
+                <span class="time">{{event.date}}</span> -
+                {% if event.title-url %}
+                <a href="{{event.title-url}}" target="_blank" rel="noreferrer">
+                  <span>{{event.title}}</span>
+                </a>
+                {% else %}
+                  <span>{{event.title}}</span>
+                {% endif %}
+              </span>
+              <span class="time-wrapper" data-aos="zoom-in-right">
+              </span>
+            </div>
+          </div>
+          {% if event.subtitle %}
+            <div class="direction-r">
+              <div class="desc neumorphism-card" data-aos="zoom-in-left">
+                {{event.subtitle}}
+                {% if event.tags %}
+                  <div class="tag-wrapper">
+                    {% for tag in event.tags %}
+                      <span class="tag neumorphism-card">{{tag.tag}}</span>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        </li>
+    {% endfor %}
+  </ul>
+</div>

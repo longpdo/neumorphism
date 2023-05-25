@@ -20,36 +20,12 @@ Example of a project:
     - tag: Node
 ```
 
-## skills-frameworks.yml
+## skills-[skill_type].yml
 
-* `name`: Name of your framework
-* `weight`: Describes how good you know the framework - values from 1 up to 5
+* `name`: Name of your skill
+* `weight`: Describes how good you know this skill - values from 1 up to 5
 
-Example of a framework:
-
-```yml
-- name: Jekyll
-  weight: 3
-```
-
-## skills-languages.yml
-
-* `name`: Name of your programming language
-* `weight`: Describes how good you know the language - values from 1 up to 5
-
-Example of a language:
-
-```yml
-- name: CSS
-  weight: 3
-```
-
-## skills-tools.yml
-
-* `name`: Name of your dev tool
-* `weight`: Describes how good you know the tool - values from 1 up to 5
-
-Example of a dev tool:
+Example:
 
 ```yml
 - name: Git
@@ -63,7 +39,6 @@ Example of a dev tool:
 * `date`: Time span
 * `subtitle`: The description under the title
 * `tags`: List of tags you want to associate with the entry
-* `timeline-side`: The side on which you want to display the entry - left or right
 
 Example of a timeline entry:
 
@@ -77,5 +52,4 @@ Example of a timeline entry:
     - tag: Javascript
     - tag: Ruby
     - tag: Rails
-  timeline-side: right
 ```
