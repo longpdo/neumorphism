@@ -2,152 +2,20 @@ setTimeout(function () {
     fadeOutPreloader(document.getElementById('preloader'), 69);
 }, 1500);
 
-$(document).ready(function () {
+$(document).ready( async () =>  {
     $(window).on('beforeunload', function () {
         window.scrollTo(0, 0);
     });
 
+    console.log(`I AM HERE`)
     /* particlesJS.load(@dom-id, @json, @callback (optional)); */
-    tsParticles.load("landing", {
-        "particles": {
-            "number": {
-                "value": 20,
-                "density": {
-                    "enable": true,
-                    "value_area": 800
-                }
-            },
-            "color": {
-                "value": "#ffffff"
-            },
-            "shape": {
-                "type": "image",
-                "options": {
-                    "images": [
-                        {
-                            "src": "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
-                            "type": "image/svg+xml",
-                        },
-                        {
-                            "src": "https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg",
-                            "type": "image/svg+xml",
-                        },
-                        {
-                            "src": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
-                            "type": "image/svg+xml",
-                        },
-                        {
-                            "src": "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
-                            "type": "image/svg+xml",
-                        },
-                        {
-                            "src": "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
-                            "type": "image/svg+xml",
-                        },
-                        {
-                            "src": "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
-                            "type": "image/svg+xml",
-                        },
-                        {
-                            "src": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Github-desktop-logo-symbol.svg",
-                            "type": "image/svg+xml",
-                        },
-                        {
-                            "src": "https://www.vectorlogo.zone/logos/jekyllrb/jekyllrb-icon.svg",
-                            "type": "image/svg+xml",
-                        },
-                        {
-                            "src": "https://upload.wikimedia.org/wikipedia/ro/6/62/MySQL.svg",
-                            "type": "image/svg+xml",
-                        },
-                        {
-                            "src": "https://www.svgrepo.com/show/349342/docker.svg",
-                            "type": "image/svg+xml",
-                        },
-                        {
-                            "src": "https://symfony.com/logos/symfony_white_03.svg",
-                            "type": "image/svg+xml",
-                        },
-                        {
-                            "src": "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg",
-                            "type": "image/svg+xml",
-                        },
-                        {
-                            "src": "https://commons.wikimedia.org/wiki/File:Electron_Software_Framework_Logo.svg",
-                            "type": "image/svg+xml",
-                        },
-                        {
-                            "src": "https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg",
-                            "type": "image/svg+xml",
-                        },
-                        {
-                            "src": "https://cdn.worldvectorlogo.com/logos/fastapi-1.svg",
-                            "type": "image/svg+xml",
-                        }
 
-                    ],
-                }
-            },
-            "opacity": {
-                "value": .8,
-                "random": false
-            },
-            "size": {
-                "value": 20,
-                "random": true
-            },
-            "line_linked": {
-                "enable": true,
-                "distance": 170,
-                "color": "#ffffff",
-                "opacity": 0.2,
-                "width": 1
-            },
-            "move": {
-                "enable": true,
-                "speed": 2,
-                "direction": "none",
-                "random": false,
-                "straight": false,
-                "out_mode": "out",
-                "bounce": false,
-                "attract": {
-                    "enable": false,
-                    "rotateX": 600,
-                    "rotateY": 1200
-                }
-            }
-        },
-        "interactivity": {
-            "detect_on": "canvas",
-            "events": {
-                "onhover": {
-                    "enable": true,
-                    "mode": "grab"
-                },
-                "onclick": {
-                    "enable": true,
-                    "mode": "push"
-                },
-                "resize": true
-            },
-            "modes": {
-                "grab": {
-                    "distance": 140,
-                    "line_linked": {
-                        "opacity": 1
-                    }
-                },
-                "push": {
-                    "particles_nb": 4
-                },
-                "remove": {
-                    "particles_nb": 2
-                }
-            }
-        },
-        "retina_detect": true
-    });
+    const myJson = await fetch('assets/particles.json')
+        .then(response => {
+            return response.json();
+        })
+
+    tsParticles.load("landing", myJson);
 
 
     // Typing Text
