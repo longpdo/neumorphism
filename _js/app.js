@@ -7,14 +7,12 @@ $(document).ready( async () =>  {
         window.scrollTo(0, 0);
     });
 
-    console.log(`I AM HERE`)
-    /* particlesJS.load(@dom-id, @json, @callback (optional)); */
-
     const myJson = await fetch('assets/particles.json')
         .then(response => {
             return response.json();
         })
 
+    /* tsParticles.load(@dom-id, @json); */
     tsParticles.load("landing", myJson);
 
 

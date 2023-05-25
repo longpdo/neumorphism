@@ -37,7 +37,7 @@
 
 ## About The Project
 
-[![Project Screenshot][product-screenshot]](https://longpdo.github.io/neumorphism/)
+[![Project Screenshot](docs/screenshot.gif)](https://miorey.github.io/neumorphism-flat/)
 
 This is a personal website built with `Jekyll` and hosted on `Github Pages`, which is based on the new `Neumorphism` design trend and was developed with a mobile-first approach. This can be used by developers, who want to showcase their resume and portfolio. If you want to use this for your own website, fork this repository and then refer to [personalize and customize](#personalize-and-customize).
 
@@ -49,7 +49,7 @@ This is a personal website built with `Jekyll` and hosted on `Github Pages`, whi
 
 * Mobile-First Responsive Design
 * Animated preloader animation
-* Landing Page with animated background with [particles.js](https://vincentgarreau.com/particles.js/), a Typing Carousel and animated social icons
+* Landing Page with animated background with [tsParticles](https://particles.js.org/), a Typing Carousel and animated social icons
 * Dark Neumorphism Design on main content
 * [Animations On Scroll](https://michalsnik.github.io/aos/)
 * Filterable *Skills* word cloud
@@ -170,9 +170,56 @@ Example:
 
 Edit files inside `_data` to add information to the portfolio. For documentation, refer to [docs/data.md](https://github.com/longpdo/neumorphism/blob/master/docs/data.md).
 
-#### Particles.js
+##### Add / remove skills section
 
-Edit `assets/particles.json` to customize the landing page backgorund animation. For more information, refer to [this](https://github.com/VincentGarreau/particles.js/#options).
+You can add and remove skills. \
+Ex: adding **design** section
+
+`_config.yml`
+```yaml
+...
+# list of available skills
+skills:
+  - languages
+  - frameworks
+  - infrastructure
+  - tools
+  - design
+...
+```
+
+Create the following file:
+`_data/skills-design.yml`
+```yaml
+- name: Gimp
+  weight: 3
+
+- name: Photoshop
+  weight: 1
+
+- name: Paint
+  weight: 2
+```
+
+In `_sass/main.scss` update `$skillsTypes` and `$skillsTypesColors`
+```scss
+$skillsTypes: languages, frameworks, tools, infrastructure, design;
+$skillsTypesColors: (
+  languages: #FF987A,
+  frameworks: #E8796F,
+  tools: #E86FC8,
+  infrastructure: #EE7AFF,
+  design: #fff
+);
+```
+
+#### tsParticles
+
+Edit `assets/particles.json` to customize the landing page backgorund animation. To test it online [this](https://codepen.io/Miorey/pen/YzJgvYe).
+
+##### Flying skills
+
+To add your own flying skills add / remove the skills based on your own logos in `particles.shape.options.image`
 
 <!-- CONTRIBUTING -->
 
@@ -203,6 +250,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 * Social Button Animation by [Stéphane Lyver](https://codepen.io/wouwi/pen/Lwrmi)
 * Adapted [Damian Jankowski's](https://codepen.io/dolaron/pen/rNadmOE) color palette for the neumorphism design
 * Based Timeline on [Krishna Babu's](https://codepen.io/krishnab/pen/OPwqbW) version
+* Demo image recorded from [Am I Responsive](https://ui.dev/amiresponsive)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 

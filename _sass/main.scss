@@ -30,7 +30,13 @@ $fifth-color: #9800AB;
 
 
 
-$skillsTypes: language, framework, tool, infrastructure;
+$skillsTypes: languages, frameworks, tools, infrastructure;
+$skillsTypesColors: (
+  languages: #FF987A,
+  frameworks: #E8796F,
+  tools: #E86FC8,
+  infrastructure: #EE7AFF
+);
 $skillsCount: calc(length($skillsTypes) + 1);
 $filterButtonWidthLarge: calc((100 - 2.5 * $skillsCount) / $skillsCount);
 $filterButtonWidthMedium: calc(#{$filterButtonWidthLarge - 0.5});
@@ -414,12 +420,7 @@ a {
   }
 
   @each $type in $skillsTypes {
-    $color: map-get((
-            language: #FF987A,
-            framework: #E8796F,
-            tool: #E86FC8,
-            infrastructure: #EE7AFF
-    ), $type);
+    $color: map-get($skillsTypesColors, $type);
 
     div[skill-type="#{$type}"] {
       color: $color;
