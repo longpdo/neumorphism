@@ -1,8 +1,8 @@
-# > name: Name of your programming language
-# > weight: Describes how good you know the language - values from 1 up to 5
+# > name: Name of your skill
+# > weight: Describes how good you know this skill - values from 1 up to 5
 #
-# Example of a Language
-# - name: Language
+# Example:
+# - name: Git
 #   weight: 5
 
 - name: TypeScript

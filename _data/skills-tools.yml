@@ -1,7 +1,7 @@
-# > name: Name of your Dev Tool
-# > weight: Describes how good you know the tool - values from 1 up to 5
+# > name: Name of your skill
+# > weight: Describes how good you know this skill - values from 1 up to 5
 #
-# Example of a Dev Tool
+# Example:
 # - name: Git
 #   weight: 5
 
