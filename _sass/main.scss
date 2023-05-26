@@ -39,6 +39,7 @@ $skillsTypesColors: (
 $skillsCount: calc(length($skillsTypes) + 1);
 $filterButtonWidthLarge: calc((100 - 2.5 * $skillsCount) / $skillsCount);
 $filterButtonWidthMedium: calc(#{$filterButtonWidthLarge - 0.5});
+$filterButtonWidthSmall: calc(#{$filterButtonWidthLarge - 2});
 
 /* General */
 
@@ -717,6 +718,7 @@ a {
       margin: 0 0.5rem 1rem;
       padding: 0.5rem 0.25rem;
       text-align: center;
+      width: #{$filterButtonWidthSmall} + "%";
 
       &:hover {
         font-weight: bolder;
