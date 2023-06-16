@@ -2,17 +2,13 @@
 
 > Neumorphism designed Jekyll theme for personal websites, portfolios and resumes.
 
-* Featured on [JAMstack Themes](https://jamstackthemes.dev/theme/jekyll-neumorphism/)
-* Featured on [Jekyll Themes](https://jekyll-themes.com/neumorphism/)
-* Featured on [jekyllthemes](http://jekyllthemes.org/themes/neumorphism/)
-
-[![Open Issues](https://badgen.net/github/open-issues/longpdo/neumorphism)](https://github.com/longpdo/neumorphism/issues)
-[![License](https://badgen.net/github/license/longpdo/neumorphism)](LICENSE)
+[![Open Issues](https://badgen.net/github/open-issues/miorey/neumorphism-flat)](https://github.com/miorey/neumorphism-flat/issues)
+[![License](https://badgen.net/github/license/miorey/neumorphism-flat)](LICENSE)
 <a href="https://jekyll-themes.com">
     <img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
 </a>
 
-[View Demo](https://longpdo.github.io/neumorphism/) · [Report Bug](https://github.com/longpdo/neumorphism/issues) · [Request Feature](https://github.com/longpdo/neumorphism/issues)
+[View Demo](https://miorey.github.io/neumorphism-flat/) · [Report Bug](https://github.com/miorey/neumorphism-flat/issues) · [Request Feature](https://github.com/miorey/neumorphism-flat/issues)
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents <!-- omit in toc -->
@@ -37,7 +33,7 @@
 
 ## About The Project
 
-[![Project Screenshot](docs/screenshot.gif)](https://miorey.github.io/neumorphism-flat/)
+[![Project Screenshot][product-screenshot]](https://miorey.github.io/neumorphism-flat/)
 
 This is a personal website built with `Jekyll` and hosted on `Github Pages`, which is based on the new `Neumorphism` design trend and was developed with a mobile-first approach. This can be used by developers, who want to showcase their resume and portfolio. If you want to use this for your own website, fork this repository and then refer to [personalize and customize](#personalize-and-customize).
 
@@ -138,7 +134,7 @@ gulp
 
 #### _config.yml
 
-Edit `_config.yml` to personalize your site. For documentation, refer to [docs/config.md](https://github.com/longpdo/neumorphism/blob/master/docs/config.md).
+Edit `_config.yml` to personalize your site. For documentation, refer to [docs/config.md](https://github.com/miorey/neumorphism-flat/issues/blob/master/docs/config.md).
 
 #### Github Metadata Plugin
 
@@ -163,12 +159,9 @@ For optimal results, you should make sure, that every Github project, you want i
 * Homepage link, if there is a live version of it
 * Topics
 
-Example:
-![Github Repository Information Example][github-repo-info]
-
 #### _data/*.yml
 
-Edit files inside `_data` to add information to the portfolio. For documentation, refer to [docs/data.md](https://github.com/longpdo/neumorphism/blob/master/docs/data.md).
+Edit files inside `_data` to add information to the portfolio. For documentation, refer to [docs/data.md](https://github.com/miorey/neumorphism-flat/blob/master/docs/data.md).
 
 ##### Add / remove skills section
 
@@ -251,5 +244,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[product-screenshot]: https://raw.githubusercontent.com/longpdo/neumorphism/master/docs/screenshot.gif
-[github-repo-info]: https://raw.githubusercontent.com/longpdo/neumorphism/master/docs/github-repo-info.png
+[product-screenshot]: https://raw.githubusercontent.com/miorey/neumorphism-flat/master/docs/screenshot.gif
