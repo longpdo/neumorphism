@@ -33,7 +33,7 @@
 
 ## About The Project
 
-[![Project Screenshot](docs/screenshot.gif)](https://miorey.github.io/neumorphism-flat/)
+[![Project Screenshot][product-screenshot]](https://miorey.github.io/neumorphism-flat/)
 
 This is a personal website built with `Jekyll` and hosted on `Github Pages`, which is based on the new `Neumorphism` design trend and was developed with a mobile-first approach. This can be used by developers, who want to showcase their resume and portfolio. If you want to use this for your own website, fork this repository and then refer to [personalize and customize](#personalize-and-customize).
 
@@ -159,9 +159,6 @@ For optimal results, you should make sure, that every Github project, you want i
 * Homepage link, if there is a live version of it
 * Topics
 
-Example:
-![Github Repository Information Example][github-repo-info]
-
 #### _data/*.yml
 
 Edit files inside `_data` to add information to the portfolio. For documentation, refer to [docs/data.md](https://github.com/miorey/neumorphism-flat/blob/master/docs/data.md).
@@ -248,4 +245,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- MARKDOWN LINKS & IMAGES -->
 
 [product-screenshot]: https://raw.githubusercontent.com/miorey/neumorphism-flat/master/docs/screenshot.gif
-[github-repo-info]: https://raw.githubusercontent.com/miorey/neumorphism-flat/master/docs/github-repo-info.png
