@@ -2,13 +2,13 @@
 
 > Neumorphism designed Jekyll theme for personal websites, portfolios and resumes.
 
-[![Open Issues](https://badgen.net/github/open-issues/longpdo/neumorphism)](https://github.com/longpdo/neumorphism/issues)
-[![License](https://badgen.net/github/license/longpdo/neumorphism)](LICENSE)
+[![Open Issues](https://badgen.net/github/open-issues/miorey/neumorphism-flat)](https://github.com/miorey/neumorphism-flat/issues)
+[![License](https://badgen.net/github/license/miorey/neumorphism-flat)](LICENSE)
 <a href="https://jekyll-themes.com">
     <img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
 </a>
 
-[View Demo](https://longpdo.github.io/neumorphism/) · [Report Bug](https://github.com/longpdo/neumorphism/issues) · [Request Feature](https://github.com/longpdo/neumorphism/issues)
+[View Demo](https://miorey.github.io/neumorphism-flat/) · [Report Bug](https://github.com/miorey/neumorphism-flat/issues) · [Request Feature](https://github.com/miorey/neumorphism-flat/issues)
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents <!-- omit in toc -->
@@ -134,7 +134,7 @@ gulp
 
 #### _config.yml
 
-Edit `_config.yml` to personalize your site. For documentation, refer to [docs/config.md](https://github.com/longpdo/neumorphism/blob/master/docs/config.md).
+Edit `_config.yml` to personalize your site. For documentation, refer to [docs/config.md](https://github.com/miorey/neumorphism-flat/issues/blob/master/docs/config.md).
 
 #### Github Metadata Plugin
 
@@ -164,7 +164,7 @@ Example:
 
 #### _data/*.yml
 
-Edit files inside `_data` to add information to the portfolio. For documentation, refer to [docs/data.md](https://github.com/longpdo/neumorphism/blob/master/docs/data.md).
+Edit files inside `_data` to add information to the portfolio. For documentation, refer to [docs/data.md](https://github.com/miorey/neumorphism-flat/blob/master/docs/data.md).
 
 ##### Add / remove skills section
 
@@ -247,5 +247,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[product-screenshot]: https://raw.githubusercontent.com/longpdo/neumorphism/master/docs/screenshot.gif
-[github-repo-info]: https://raw.githubusercontent.com/longpdo/neumorphism/master/docs/github-repo-info.png
+[product-screenshot]: https://raw.githubusercontent.com/miorey/neumorphism-flat/master/docs/screenshot.gif
+[github-repo-info]: https://raw.githubusercontent.com/miorey/neumorphism-flat/master/docs/github-repo-info.png
