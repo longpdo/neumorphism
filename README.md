@@ -4,9 +4,6 @@
 
 [![Open Issues](https://badgen.net/github/open-issues/miorey/neumorphism-flat)](https://github.com/miorey/neumorphism-flat/issues)
 [![License](https://badgen.net/github/license/miorey/neumorphism-flat)](LICENSE)
-<a href="https://jekyll-themes.com">
-    <img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
-</a>
 
 [View Demo](https://miorey.github.io/neumorphism-flat/) · [Report Bug](https://github.com/miorey/neumorphism-flat/issues) · [Request Feature](https://github.com/miorey/neumorphism-flat/issues)
 
@@ -62,6 +59,11 @@ To get a local copy up and running follow these simple steps.
 `The commands and instructions I provide are for MacOS - please look up the specific commands for your OS on your own.`
 
 ### Prerequisites
+![Ruby Version](https://img.shields.io/badge/Ruby-3.1.x-red)
+```sh
+ruby-install ruby 3.1 -- --with-openssl-dir=/usr/local/bin/openssl
+chruby 3.1.4
+```
 
 * [NodeJS](https://nodejs.org/en/)
 
@@ -93,7 +95,7 @@ npm install -g yarn
 
 ```sh
 # Replace {YOUR_USERNAME} with your actual username
-git clone https://github.com/{YOUR_USERNAME}/neumorphism.git
+git clone https://github.com/{YOUR_USERNAME}/neumorphism-flat.git
 ```
 
 or
@@ -108,7 +110,7 @@ git clone https://github.com/{YOUR_USERNAME}/{YOUR_REPOSITORY}.git
 2: Change directory into neumorphism
 
 ```sh
-cd neumorphism
+cd neumorphism-flat
 ```
 
 3: Install dependencies
