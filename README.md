@@ -93,7 +93,7 @@ npm install -g yarn
 
 ```sh
 # Replace {YOUR_USERNAME} with your actual username
-git clone https://github.com/{YOUR_USERNAME}/neumorphism.git
+git clone https://github.com/{YOUR_USERNAME}/neumorphism-flat.git
 ```
 
 or
@@ -108,7 +108,7 @@ git clone https://github.com/{YOUR_USERNAME}/{YOUR_REPOSITORY}.git
 2: Change directory into neumorphism
 
 ```sh
-cd neumorphism
+cd neumorphism-flat
 ```
 
 3: Install dependencies
