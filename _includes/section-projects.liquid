@@ -86,7 +86,7 @@
             <p class="project-desc">{{repository.description}}</p>
           </div>
           <div class="project_footer">
-            {% if repository.homepage and repository.homepage %}
+            {% if repository.homepage and repository.homepage != "" %}
               <a class="highlight-link" href="{{repository.homepage}}" target="_blank" rel="noreferrer">
                 Demo
               </a>
