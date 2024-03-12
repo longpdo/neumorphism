@@ -59,19 +59,36 @@ To get a local copy up and running follow these simple steps.
 `The commands and instructions I provide are for MacOS - please look up the specific commands for your OS on your own.`
 
 ### Prerequisites
+
+
+#### Install on macOS
 ![Ruby Version](https://img.shields.io/badge/Ruby-3.1.x-red)
+
+You can install ruby through different rbenv with
 ```sh
+brew install rbenv ruby-build
+RUBY_CONFIGURE_OPTS=--with-openssl-dir=/usr/local/bin/openssl rbenv install 3.1.4
+```
+Add the gem to your `.bash_profile`, `.zshrc`:
+```bash
+export GEM_HOME="$HOME/.gem"
+export PATH="$HOME/.gem/bin:$PATH"
+```
+
+
+or install ruby directly with:
+```sh
+brew install ruby-install
 ruby-install ruby 3.1 -- --with-openssl-dir=/usr/local/bin/openssl
 chruby 3.1.4
 ```
 
-* [NodeJS](https://nodejs.org/en/)
-
+[NodeJS](https://nodejs.org/en/)
 ```sh
 brew install node
 ```
 
-If you need to switch between Node versions regurlarly, I would recommend to install Node via [Node Version Manager](https://github.com/nvm-sh/nvm/blob/master/README.md#manual-install).
+If you need to switch between Node versions regularly, I would recommend to install Node via [Node Version Manager](https://github.com/nvm-sh/nvm/blob/master/README.md#manual-install).
 
 * [Jekyll](https://jekyllrb.com/)
 
@@ -85,32 +102,6 @@ For more information, refer to [this](https://jekyllrb.com/docs/installation/).
 
 ```sh
 npm install -g yarn
-```
-
-### Installation
-
-> Recommended way: If you want to contribute to this theme or open issues due to problems implementing this on your own, I would recommend forking the repository directly. This makes it easier for me to solve open issues and questions or check pull requests.
-
-1.1: Fork the repository (using the `Fork` button at the top) and then clone the repository
-
-```sh
-# Replace {YOUR_USERNAME} with your actual username
-git clone https://github.com/{YOUR_USERNAME}/neumorphism-flat.git
-```
-
-or
-
-1.2: Create your own repository (using the green `Use this template` button at the top) and then clone the repository
-
-```sh
-# Replace {YOUR_USERNAME}, {YOUR_REPOSITORY} with the actual values
-git clone https://github.com/{YOUR_USERNAME}/{YOUR_REPOSITORY}.git
-```
-
-2: Change directory into neumorphism
-
-```sh
-cd neumorphism-flat
 ```
 
 3: Install dependencies
@@ -207,13 +198,26 @@ $skillsTypesColors: (
 
 #### tsParticles
 
-Edit `assets/particles.json` to customize the landing page backgorund animation. To test it online [this](https://codepen.io/Miorey/pen/YzJgvYe).
+Edit `assets/particles.json` to customize the landing page background animation. To test it online [this](https://codepen.io/Miorey/pen/YzJgvYe).
 
 ##### Flying skills
 
 To add your own flying skills add / remove the skills based on your own logos in `particles.shape.options.image`
 
-<!-- CONTRIBUTING -->
+
+### Deploy on GitHub
+
+> Recommended way: If you want to contribute to this theme or open issues due to problems implementing this on your own, I would recommend forking the repository directly. This makes it easier for me to solve open issues and questions or check pull requests.
+
+Fork the repository (using the `Fork` button at the top) and then clone the repository
+
+```sh
+# Replace {YOUR_USERNAME} with your actual username
+git clone https://github.com/{YOUR_USERNAME}/neumorphism-flat.git
+```
+Go into the Settings of your fork repository and activate GitHub pages
+
+![./docs/github-pages.png](docs/github-pages.png)
 
 ## Contributing
 
