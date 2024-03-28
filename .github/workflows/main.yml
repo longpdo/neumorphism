@@ -1,0 +1,27 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up Ruby
+      uses: actions/setup-ruby@v2
+      with:
+        ruby-version: 2.7
+
+    - name: Build and Deploy
+      env:
+        Portfolio_API: ${{ secrets.Portfolio_API }}
+      run: |
+        bundle install
+        bundle exec jekyll build
+        # Add commands to deploy your site (e.g., GitHub Pages deployment)
